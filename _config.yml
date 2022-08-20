@@ -42,6 +42,8 @@ highlighter: rouge
 
 sass:
   style: :compressed
+ 
+markdown: kramdown
 
 plugins:
   - jekyll-feed
