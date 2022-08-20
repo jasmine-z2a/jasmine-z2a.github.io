@@ -1,1 +1,3 @@
-# Welcome to Z2A Zone
+---
+layout: home
+---
