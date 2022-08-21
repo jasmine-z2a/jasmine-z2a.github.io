@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-08-22T00:38:14+08:00</updated><id>/feed.xml</id><title type="html">Jasmine-z2a Zone</title><subtitle>This Zone is to share some knowledge. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-08-22T01:21:12+08:00</updated><id>/feed.xml</id><title type="html">Jasmine-z2a Zone</title><subtitle>This Zone is to share some knowledge. 
 </subtitle><author><name>z2a Tang</name></author><entry><title type="html">What CORS is</title><link href="/cors" rel="alternate" type="text/html" title="What CORS is" /><published>2022-02-28T00:00:00+08:00</published><updated>2022-02-28T00:00:00+08:00</updated><id>/CORS</id><content type="html" xml:base="/cors"># 跨源资源共享（CORS）
 
 
