@@ -1,6 +1,6 @@
 title: Jasmine-z2a Zone
 author: z2a Tang
-# url: https://www.abhinavsaxena.com/moonwalk # root address of the site
+url: https://www.jasmine-z2a.com # root address of the site
 description: > # description of the site (multiple lines allowed)
     This Zone is to share some knowledge. 
 permalink: /:slug
@@ -11,8 +11,8 @@ favicon: "./logo.png" # relative path to site's favicon
 #     username: abhinav # update or delete this
 #     card: summary_large_image
 
-# theme: abhinavs/moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-remote_theme: abhinavs/moonwalk
+theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
+# remote_theme: abhinavs/moonwalk
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
