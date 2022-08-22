@@ -1,3 +1,5 @@
 *.jekyll-cache/
 *localtest
 *feed.xml
+*_site
+*.jekyll-metedata
