@@ -3,3 +3,4 @@
 *feed.xml
 *_site
 *.jekyll-metedata
+*.sass-cache/
