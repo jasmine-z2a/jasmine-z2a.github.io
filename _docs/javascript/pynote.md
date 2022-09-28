@@ -167,7 +167,7 @@ class Fib:
 f = Fib(10)
 print([i for i in f])
 ```
-###生成器
+### 生成器
 用关键字yield来返回值的函数是生成器函数,该函数调用时会返回一个生成器对象,不会立刻返回,调用next方法才返回(for 调用 next方法)
 ```python
 def fib(n):
