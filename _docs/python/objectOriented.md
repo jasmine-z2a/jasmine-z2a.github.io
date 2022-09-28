@@ -1,5 +1,5 @@
 ---
-title: Object Oriented Note
+title: 面向对象笔记
 category: Python
 order: 2
 ---
@@ -20,9 +20,9 @@ class ABC:
 经典类: python2  
 新式类: python3默认继承object
   
-## "__name__ == __main__"
+## "\_\_name__ == \_\_main__"
 
-if __name__ == '__main__'
+if \_\_name__ == "\_\_main__"
 
 所有的模块都有一个内置属性 __name__ , 可以用来查看模块名
 
@@ -124,5 +124,5 @@ conn.send(struct.pack('i', len(res)))
 sock.send(cmd.encode('utf-8'))
 res = sock.recv(4)
 ### 解开报头取出数据长度
-length = struct.unpack('i', res)[0
+length = struct.unpack('i', res)[0]
 
