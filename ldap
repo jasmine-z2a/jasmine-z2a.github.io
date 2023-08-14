@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JT_blog</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="JT_blog">
+  <title>LDAP简介 | JT_blog</title>
+  <meta name="keywords" content=" other ">
+  <meta name="description" content="LDAP简介 | JT_blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -54,7 +54,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -455,12 +455,58 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-ldap" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%8F%B6%E8%90%BD%E9%98%81"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">LDAP简介</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="其他">其他</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">other</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-08-14 18:21:57'>2023-08-14 18:21</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-is-LDAP"><span class="toc-text">What is LDAP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LDAP-%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9E%8B"><span class="toc-text">LDAP 的基本模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%A0%91%E6%A6%82%E5%BF%B5"><span class="toc-text">目录树概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%A8%A1%E5%9E%8B"><span class="toc-text">信息模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E6%A8%A1%E5%9E%8B"><span class="toc-text">命名模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9E%8B"><span class="toc-text">功能模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%A8%A1%E5%9E%8B"><span class="toc-text">安全模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LDAP%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">LDAP的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE"><span class="toc-text">程序中如何访问</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-text">引用</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -473,37 +519,65 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阁主（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad&#x2F;手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="What-is-LDAP"><a href="#What-is-LDAP" class="headerlink" title="What is LDAP"></a>What is LDAP</h2><p>LDAP:Light Directory Access Portocol 轻量级目录访问协议<br>一种基于X.500标准等轻量级目录访问协议，目录是一个为查询、浏览和搜索而优化的数据库，它成树状结构组织数据，类似文件目录一样。<br>目录数据库和关系数据库不同，它有优异的读性能，但写性能差，并且没有事务处理、回滚等复杂功能，不适于存储修改频繁的数据。</p>
+<p>LDAP目录服务是由目录数据库和一套访问协议组成的系统。</p>
+<h2 id="LDAP-的基本模型"><a href="#LDAP-的基本模型" class="headerlink" title="LDAP 的基本模型"></a>LDAP 的基本模型</h2><h3 id="目录树概念"><a href="#目录树概念" class="headerlink" title="目录树概念"></a>目录树概念</h3><ol>
+<li><p>目录树：在一个目录服务系统中，整个目录信息集可以表示为一个目录信息树，树中的每个节点是一个条目。</p>
+</li>
+<li><p>条目：每个条目就是一条记录，每个条目有自己的唯一可区别的名称（DN）。</p>
+</li>
+<li><p>对象类：与某个实体类型对应的一组属性，对象类是可以继承的，这样父类的必须属性也会被继承下来。</p>
+</li>
+<li><p>属性：描述条目的某个方面的信息，一个属性由一个属性类型和一个或多个属性值组成，属性有必须属性和非必须属性。</p>
+</li>
+</ol>
+<h3 id="信息模型"><a href="#信息模型" class="headerlink" title="信息模型"></a>信息模型</h3><p>在LDAP中信息以树状方式组织，在树状信息中的基本数据单元是条目，而每个条目有属性构成，属性中存储有属性值</p>
+<h3 id="命名模型"><a href="#命名模型" class="headerlink" title="命名模型"></a>命名模型</h3><p>LDAP的命名模型，也即LDAP中的条目定位方式。在LDAP中每个条目均有自己的DN(distinguished name)。DN是该条目在整个书中的唯一名称标识</p>
+<h3 id="功能模型"><a href="#功能模型" class="headerlink" title="功能模型"></a>功能模型</h3><p>在LDAP中共有四类10种操作：查询类操作，添加条目，删除条目，修改条目；认证类，绑定，结绑定；其他操作，如放弃和扩展操作</p>
+<h3 id="安全模型"><a href="#安全模型" class="headerlink" title="安全模型"></a>安全模型</h3><p>LDAP中的安全模型主要通过身份认证，安全通道和访问控制来实现。</p>
+<h2 id="LDAP的使用"><a href="#LDAP的使用" class="headerlink" title="LDAP的使用"></a>LDAP的使用</h2><p>　　统一身份认证主要是改变原有的认证策略，使需要认证的软件都通过LDAP进行认证，在统一身份认证之后，用户的所有信息都存储在AD Server中。终端用户在需要使用公司内部服务的时候，都需要通过AD服务器的认证。</p>
+<h3 id="程序中如何访问"><a href="#程序中如何访问" class="headerlink" title="程序中如何访问"></a>程序中如何访问</h3><p>python example  </p>
+<pre><code class="python">import ldap
+### initialize our connect to ldap-server
+connect = ldap.initialize(&#39;ldap://our-ldap.server&#39;)
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+### we need to use our credentials to search LDAP
+connect.set_option(ldap.OPT_REFERRALS, 0)
+
+### bind our server
+connect.simple_bind_s(&#39;ldap_login&#39;, &#39;ldap_password&#39;)
+
+And a little tip about why simple_bind_s — &#39;_s&#39; at the end mean that this request will be executed synchronously. Without that all requests are called asynchronously.
+
+### an example for user search
+result = connect.search_s(&#39;dc=somedomain, dc=com&#39;,ldap.SCOPE_SUBTREE,&#39;userPrintcipalName=user@somedomain.com&#39;,[&#39;memberOf&#39;])
+
+</code></pre>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p><a target="_blank" rel="noopener" href="https://medium.com/@alpolishchuk/a-little-python-ldap-tutorial-4a6a79676157">https://medium.com/@alpolishchuk/a-little-python-ldap-tutorial-4a6a79676157</a></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -512,11 +586,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 <div class="hide_box" onclick="dashangToggle()"></div>
