@@ -423,19 +423,19 @@
         
         
         <a  class="全部文章 后端 "
-           href="/pynote"
-           data-tag="Tools"
+           href="/mult-process"
+           data-tag="Python"
            data-author="" >
-            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
+            <span class="post-title" title="多进程多线程">多进程多线程</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
         
         <a  class="全部文章 后端 "
-           href="/mult-process"
-           data-tag="Python"
+           href="/pynote"
+           data-tag="Tools"
            data-author="" >
-            <span class="post-title" title="多进程多线程">多进程多线程</span>
+            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
