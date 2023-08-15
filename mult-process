@@ -2,14 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>多进程多线程 | JT_blog</title>
+  <title>多进程多线程 | J blog</title>
   <meta name="keywords" content=" Python ">
-  <meta name="description" content="多进程多线程 | JT_blog">
+  <meta name="description" content="多进程多线程 | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://jasmine-z2a.github.io/about/index.html">
-<meta property="og:site_name" content="JT_blog">
+<meta property="og:site_name" content="J blog">
+<meta property="og:description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-04T10:45:19.000Z">
 <meta property="article:modified_time" content="2023-08-14T10:21:57.621Z">
@@ -68,16 +70,6 @@
 <div class="icon">
     
         
-            <a title="rss"
-               href="/atom.xml"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-rss"></use>
-                    </svg>
-                
-            </a>
-        
     
         
             <a title="github"
@@ -101,7 +93,7 @@
     
         
             <a title="email"
-               href="mailto:jaytp@qq.com"
+               href="mailto:jasmine7625@163.com"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -205,7 +197,7 @@
     <div class="friends-content">
         <ul>
             
-            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            <li><a target="_blank" href="http://yelog.org/">作者</a></li>
             
         </ul>
     </div>
@@ -470,7 +462,7 @@ mutexA = mutexB = threading.RLock()
 <p>创建一个事件(消息)队列 , 鼠标点击就往队列中增加一个鼠标点击事件 , 键盘敲击就往队列中增加一个键盘敲击事件 , 创建一个线程(IO线程)负责不断从队列中取出事件 , 根据不同的事件 , 调用不同的函数 , 如onClick() , onKeyDown()等 , 即一个线程解决了所有事件的问题 , 这就是复用<br>比较 : 与多进程多线程技术相比 , I&#x2F;O多路复用最大的优势是系统开销小 , 系统不必创建进程&#x2F;线程 , 也不必维护这些进程&#x2F;线程 , 从而大大减小了系统的开销</p>
 <h2 id="协程-Coroutine"><a href="#协程-Coroutine" class="headerlink" title="协程(Coroutine)"></a>协程(Coroutine)</h2>
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jasmine7625@163.com </span>
     </div>
 </article>
 
@@ -492,7 +484,7 @@ mutexA = mutexB = threading.RLock()
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2016-2020 Yelog
+    ©2016-2020 Jasmine
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
