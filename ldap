@@ -138,10 +138,25 @@
                 
     <li>
         <div data-rel="测试">
-            
+            <i class="fold iconfont icon-right"></i>
             测试
             <small>(1)</small>
         </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="测试&lt;---&gt;pytest">
+            
+            pytest
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
         
     </li>
 
@@ -175,6 +190,10 @@
         
     </li>
 
+            
+        
+    
+        
             
         
     
@@ -269,7 +288,7 @@
     <nav id="title-list-nav">
         
         
-        <a  class="全部文章 测试 "
+        <a  class="全部文章 测试 pytest "
            href="/pytest%E5%9F%BA%E7%A1%80"
            data-tag="python,test"
            data-author="" >

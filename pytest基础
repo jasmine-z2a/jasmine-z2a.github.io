@@ -138,10 +138,25 @@
                 
     <li>
         <div data-rel="测试">
-            
+            <i class="fold iconfont icon-right"></i>
             测试
             <small>(1)</small>
         </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="测试&lt;---&gt;pytest">
+            
+            pytest
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
         
     </li>
 
@@ -175,6 +190,10 @@
         
     </li>
 
+            
+        
+    
+        
             
         
     
@@ -269,7 +288,7 @@
     <nav id="title-list-nav">
         
         
-        <a  class="全部文章 测试 "
+        <a  class="全部文章 测试 pytest "
            href="/pytest%E5%9F%BA%E7%A1%80"
            data-tag="python,test"
            data-author="" >
@@ -352,7 +371,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="测试">测试</a>
+            <a  data-rel="测试">测试</a> > 
+            
+            <a  data-rel="测试&lt;---&gt;pytest">pytest</a>
             
         </span>
         
@@ -369,7 +390,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-15 14:09:47'>2023-08-15 14:08</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-16 20:02:37'>2023-08-15 14:08</time>
         
     </div>
     <div class="article-meta">
@@ -391,7 +412,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%BC%96%E5%86%99"><span class="toc-text">测试用例编写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%92%8C%E6%9C%89%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E5%88%86%E4%BA%AB"><span class="toc-text">常用功能和有用的插件分享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A"><span class="toc-text">测试报告</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-text">引用</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -407,7 +428,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>pytest是一个用于测试的三方库，相较于python 自带的unitest库，pytest有提供更丰富的功能，包括通过@pytest的装饰器来给测试用例做标记，易学易用，再比如通过钩子函数生成符合要求的测试报告等<br>安装环境要求: Python 3.7+ or PyPy3.  </p>
+<h2 id="测试用例编写"><a href="#测试用例编写" class="headerlink" title="测试用例编写"></a>测试用例编写</h2><p>pytest官网教程传送🚪：<a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.4.x/getting-started.html">pytest官网</a></p>
+<h2 id="常用功能和有用的插件分享"><a href="#常用功能和有用的插件分享" class="headerlink" title="常用功能和有用的插件分享"></a>常用功能和有用的插件分享</h2><p>学以致用，那么在实际工作运用中的使用方式是和官网的教程中不一样的，更多的是测试多个功能而不是跑多个测试用例，从而在pytest框架的基础上搭建适合业务需求的测试框架，一般的测试框架如下：  </p>
+<pre><code class="shell">pytest_framework
+├── common.py
+├── conftest.py
+├── pytest.ini
+├── run_main.py
+└── test_cases
+    ├── test_function_1.py
+    ├── test_function_2.py
+    └── test_function_3.py
+</code></pre>
+<h2 id="测试报告"><a href="#测试报告" class="headerlink" title="测试报告"></a>测试报告</h2><p>生成测试报告的方式有多种，先介绍以下4种：<br>1.</p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jasmine7625@163.com </span>
     </div>
