@@ -390,7 +390,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-17 19:49:28'>2023-08-15 14:08</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-18 19:48:31'>2023-08-15 14:08</time>
         
     </div>
     <div class="article-meta">
@@ -478,17 +478,47 @@ allure serve result
 <ol start="3">
 <li>pytest json report 插件，生成json格式的报告</li>
 </ol>
-<pre><code># 安装
-pip install pytest-json-report
+<pre><code class="shell"># 安装
+$ pip install pytest-json-report
 # 使用
-pytest --json-report  “dir”  #后面不跟目录的话默认在当前目录的生成.report.json
-pytest.main([&quot; --json-report &quot;])
+$ pytest --json-report  “dir”  #后面不跟目录的话默认在当前目录的生成.report.json
+$ pytest.main([&quot; --json-report &quot;])
+</code></pre>
+<p>另外一个比较实用的用法是通过plugin来获取用例的测试结果汇总,用法如下：</p>
+<pre><code class="python3">import pytest
+from pytest_jsonreport.plugin import JSONReport
+
+plugin = JSONReport()
+pytest.main([&#39;--json-report-file=none&#39;, &#39;test_foo.py&#39;], plugins=[plugin])
+summary = plugin.report.get(&#39;summary&#39;) # 这样就能获取到json格式的测试结果汇总
 </code></pre>
 <ol start="4">
-<li>xml</li>
-<li>pytest-testreport 插件</li>
-<li>用钩子函数+logging模块自定义report</li>
+<li>xml格式的报告是pytest自带的，不需要额外安装插件，但是生成的报告并不好看</li>
 </ol>
+<pre><code class="shell"># 使用
+$ pytest  --junitxml=./result/report.xml
+</code></pre>
+<ol start="5">
+<li><p>pytest-testreport 插件</p>
+</li>
+<li><p>用钩子函数自定义report<br>如果你想实现完全自定格式的报告可以考虑用钩子函数实现，<br>a. txt格式的报告可以用钩子函数+ logging模块，举例如下：</p>
+</li>
+</ol>
+<pre><code class="python3"># 首先可以在pytest.ini或conftest.py文件中定义log文件的格式和参数
+pytest.ini
+
+
+conftest.py
+
+
+
+
+
+
+</code></pre>
+<pre><code class="python3">
+</code></pre>
+<p>b. doxc格式的报告可以用钩子函数+ python-docx模块，还可以插入图片<br>c. 扩展一下，那么也可以生成excel，csv 等格式的报告，此处不再赘述。</p>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p><a target="_blank" rel="noopener" href="https://pypi.org/project/pytest-json-report/">https://pypi.org/project/pytest-json-report/</a></p>
 
       
