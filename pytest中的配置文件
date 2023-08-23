@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>pytest基础 | J blog</title>
+  <title>pytest中的配置文件 | J blog</title>
   <meta name="keywords" content=" python , test ">
-  <meta name="description" content="pytest基础 | J blog">
+  <meta name="description" content="pytest中的配置文件 | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
 <meta property="og:type" content="website">
@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(6)</small>
+                <small>(7)</small>
             
         </div>
     </li>
@@ -140,7 +140,7 @@
         <div data-rel="测试">
             <i class="fold iconfont icon-right"></i>
             测试
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
             <ul class="sub hide">
@@ -150,7 +150,7 @@
         <div data-rel="测试&lt;---&gt;pytest">
             
             pytest
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -214,7 +214,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="6">
+<input type="hidden" id="yelog_site_posts_number" value="7">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -289,7 +289,16 @@
         
         
         <a  class="全部文章 测试 pytest "
-           href="/pytest%E5%9F%BA%E7%A1%80"
+           href="/pytest%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"
+           data-tag="python,test"
+           data-author="" >
+            <span class="post-title" title="pytest中的配置文件">pytest中的配置文件</span>
+            <span class="post-date" title="2023-08-23 11:37:49">2023/08/23</span>
+        </a>
+        
+        
+        <a  class="全部文章 测试 pytest "
+           href="/pytest%E5%AE%9E%E7%94%A8%E7%AC%94%E8%AE%B0"
            data-tag="python,test"
            data-author="" >
             <span class="post-title" title="pytest基础">pytest基础</span>
@@ -325,19 +334,19 @@
         
         
         <a  class="全部文章 后端 "
-           href="/mult-process"
-           data-tag="Python"
+           href="/pynote"
+           data-tag="Tools,python"
            data-author="" >
-            <span class="post-title" title="多进程多线程">多进程多线程</span>
+            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
         
         <a  class="全部文章 后端 "
-           href="/pynote"
-           data-tag="Tools"
+           href="/mult-process"
+           data-tag="Python"
            data-author="" >
-            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
+            <span class="post-title" title="多进程多线程">多进程多线程</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
@@ -359,9 +368,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-pytest基础" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-pytest中的配置文件" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">pytest基础</h1>
+        <h1 class="article-title">pytest中的配置文件</h1>
     
     <div class="article-meta">
         
@@ -390,7 +399,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-22 13:21:07'>2023-08-15 14:08</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-23 19:02:48'>2023-08-23 11:37</time>
         
     </div>
     <div class="article-meta">
@@ -412,7 +421,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%BC%96%E5%86%99"><span class="toc-text">测试用例编写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%92%8C%E6%9C%89%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E5%88%86%E4%BA%AB"><span class="toc-text">常用功能和有用的插件分享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A"><span class="toc-text">测试报告</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%EF%BC%88ps-%E5%AE%98%E7%BD%91%E6%89%8D%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84%E6%95%99%E7%A8%8B%EF%BC%89"><span class="toc-text">引用（ps:官网才是最好的教程）</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pytest-ini-%E7%94%A8%E6%B3%95"><span class="toc-text">pytest.ini 用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pyproject-toml%EF%BC%9A"><span class="toc-text">pyproject.toml：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tox-ini"><span class="toc-text">tox.ini:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#setup-cfg"><span class="toc-text">setup.cfg:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%EF%BC%9A"><span class="toc-text">引用：</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -428,113 +437,62 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>pytest是一个用于测试的三方库，相较于python 自带的unitest库，pytest有提供更丰富的功能，包括通过@pytest的装饰器来给测试用例做标记，易学易用，再比如通过钩子函数生成符合要求的测试报告等  </p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>配置文件是使配置本地保存的一个常用方式，在pytest测试中避免每次传入大量的参数的不方便，以及参数过多导致漏传的问题。<br>pytest中的常规配置文件比如pytest.ini，我在项目中一般也就用这个就够了，但是出于对其他几个配置文件的好奇，于是有了这篇文章，来看看其他配置文件，比如：pyproject.toml，tox.ini，setup.cfg，官网上有写到这些配置文件各自的用途，在这里我总结一下  </p>
+<h2 id="pytest-ini-用法"><a href="#pytest-ini-用法" class="headerlink" title="pytest.ini 用法"></a>pytest.ini 用法</h2><p>在所有配置文件中的优先级是最高的</p>
+<pre><code>[pytest]
+minversion = 6.0
+addopts = -ra -q
+testpaths =
+    tests
+    integration
+</code></pre>
+<h2 id="pyproject-toml："><a href="#pyproject-toml：" class="headerlink" title="pyproject.toml："></a>pyproject.toml：</h2><p>官网原话引用：人们可能想知道为什么像其他工具一样使用 [tool.pytest.ini_options] 而不是 [tool.pytest]。</p>
+<p>原因是pytest团队打算在未来充分利用丰富的TOML数据格式进行配置，为此保留了[tool.pytest]表。 目前，ini_options 表用作现有 .ini 配置系统和未来配置格式之间的桥梁。  </p>
+<pre><code>[tool.pytest.ini_options]
+minversion = &quot;6.0&quot;
+addopts = &quot;-ra -q&quot;
+testpaths = [
+    &quot;tests&quot;,
+    &quot;integration&quot;,
+]
+</code></pre>
+<h2 id="tox-ini"><a href="#tox-ini" class="headerlink" title="tox.ini:"></a>tox.ini:</h2><p>tox是什么，从tox官网可知，它是一个自动化项目，目的是使python的测试自动化且标准化，使用指南传送🚪：[tox使用指南]（<a target="_blank" rel="noopener" href="https://tox.wiki/en/4.10.0/user_guide.html%EF%BC%89">https://tox.wiki/en/4.10.0/user_guide.html）</a>, 如果使用tox.ini文件配置参数，在[pytest]后的那一块和pytest.ini的用法一致，可以说是tox.ini是包含pytest的功能</p>
+<pre><code>[tox]
+env_list =
+    format
+    py310
+
+[testenv:format]
+description = install black in a virtual environment and invoke it on the current folder
+deps = black==22.3.0
+skip_install = true
+commands = black .
+
+[testenv:py310]
+description = install pytest in a virtual environment and invoke it on the tests folder
+deps =
+    pytest&gt;=7
+    pytest-sugar
+commands = pytest tests &#123;posargs&#125;
+[pytest]
+minversion = 6.0
+addopts = -ra -q
+testpaths =
+    tests
+    integration
+</code></pre>
+<h2 id="setup-cfg"><a href="#setup-cfg" class="headerlink" title="setup.cfg:"></a>setup.cfg:</h2><p>官网不建议使用这种格式的配置文件，原因如下：  </p>
 <blockquote>
-<p>安装环境要求: Python 3.7+ or PyPy3.  </p>
+<p>警告!!!<br>用法 setup.cfg 除非用于非常简单的用例，否则不推荐使用。 .cfg 文件使用不同于 pytest.ini 和 tox.ini 这可能会导致难以追踪的问题。如果可能，建议使用后一个文件，或者 pyproject.toml ，以保存pytest配置。</p>
 </blockquote>
-<h2 id="测试用例编写"><a href="#测试用例编写" class="headerlink" title="测试用例编写"></a>测试用例编写</h2><p>pytest官网教程传送🚪：<a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.4.x/getting-started.html">pytest官网</a></p>
-<h2 id="常用功能和有用的插件分享"><a href="#常用功能和有用的插件分享" class="headerlink" title="常用功能和有用的插件分享"></a>常用功能和有用的插件分享</h2><p>学以致用，那么在实际工作运用中的使用方式是和官网的教程中不一样的，更多的是测试多个功能而不是跑多个测试用例，从而在pytest框架的基础上搭建适合业务需求的测试框架，一般的测试框架如下：  </p>
-<pre><code class="shell">test_dir
-├── common.py 
-├── conftest.py
-├── pytest.ini
-├── run_main.py
-└── test_cases
-    ├── test_function_1.py
-    ├── test_function_2.py
-    └── test_function_3.py
+<pre><code>[tool:pytest]
+minversion = 6.0
+addopts = -ra -q
+testpaths =
+    tests
+    integration
 </code></pre>
-<p>run_main.py 是测试执行的入口，也可以不写，直接执行:python pytest.main()<br>common.py 一般写些公用的setup和teardown函数&#x2F;类<br>conftest.py 一般写的是fixture，以及钩子函数<br>test_cases 存放测试函数<br>pytest.ini pytest的配置文件，包括指定运行测试的目录，pytest运行执行的选项，自定义mark， 自定义logging等</p>
-<h2 id="测试报告"><a href="#测试报告" class="headerlink" title="测试报告"></a>测试报告</h2><p>生成测试报告的方式有多种，先介绍以下4种：  </p>
-<ol>
-<li>用pytest-html插件生成html报告：</li>
-</ol>
-<pre><code class="shell">#安装
-$ pip install pytest-html   
-#使用
-$ pytest --html=report.html
-$ pytest.main([&quot;--html=report.html&quot;])
-</code></pre>
-<p>成功生成的报告分为两部分，一个是html静态文件，还有个assets文件夹，是report的样式文件  </p>
-<ol start="2">
-<li>用pytest allure插件，生成html报告，在样式上比方法1的报告更加好看，还有可视化图表生成，以及allure特性—feature, storry, step<br>可以在报告中添加用例描述信息，比如测试功能，子功能或场景，测试步骤以及测试附加信息等<blockquote>
-<p># 安装allure</p>
-</blockquote>
-</li>
-</ol>
-<blockquote>
-<p>地址：<a target="_blank" rel="noopener" href="https://github.com/allure-framework/allure2/releases">https://github.com/allure-framework/allure2/releases</a></p>
-</blockquote>
-<pre><code class="shell"># 安装插件
-pip install allure-pytest
-# 使用
-$ pytest  --alluredir=./result
-$ pytest.main([&quot; --alluredir=./result&quot;])
-</code></pre>
-<p>查看报告时，需要启动allure服务, </p>
-<pre><code># 执行命令：allure serve  生成的报告路径
-allure serve result
-</code></pre>
-<ol start="3">
-<li>pytest json report 插件，生成json格式的报告</li>
-</ol>
-<pre><code class="shell"># 安装
-$ pip install pytest-json-report
-# 使用
-$ pytest --json-report  “dir”  #后面不跟目录的话默认在当前目录的生成.report.json
-$ pytest.main([&quot; --json-report &quot;])
-</code></pre>
-<p>另外一个比较实用的用法是通过plugin来获取用例的测试结果汇总,用法如下：</p>
-<pre><code class="python3">import pytest
-from pytest_jsonreport.plugin import JSONReport
-
-plugin = JSONReport()
-pytest.main([&#39;--json-report-file=none&#39;, &#39;test_foo.py&#39;], plugins=[plugin])
-summary = plugin.report.get(&#39;summary&#39;) # 这样就能获取到json格式的测试结果汇总
-</code></pre>
-<ol start="4">
-<li>xml格式的报告是pytest自带的，不需要额外安装插件，但是生成的报告并不好看</li>
-</ol>
-<pre><code class="shell"># 使用
-$ pytest  --junitxml=./result/report.xml
-</code></pre>
-<ol start="5">
-<li>用钩子函数自定义report, 作者本人觉得好用<br>如果你想实现完全自定格式的报告可以考虑用钩子函数实现，<br>a. txt格式的报告可以用钩子函数+ logging模块，举例如下：</li>
-</ol>
-<pre><code class="python3"># 首先可以在pytest.ini文件中定义log文件的格式和参数
-文件: pytest.ini
-log_file = &quot;log.txt&quot;   # 文件名，这个选项在这里会将输出的log文件名固定，所以会被覆盖，比较好的处理方式是在pytest.main()中传入log file，见以下用例。
-log_file_level = &quot;INFO&quot;  # 打印的log信息的最低等级，也就是等级在INFO之上的都会被打印出来。
-log_file_format = &quot;%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)&quot;  # 日志格式。
-log_file_date_format = &quot;%Y-%m-%d %H:%M:%S&quot; # log时间格式，与date strftime的formate一样。
-
-
-# 在conftest.py添加钩子函数，将要记录的信息写入log文件中
-import logging
-
-@pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item, call):
-    # 传参中的item其实就是测试用例函数对象，所以可以利用python的自省来获取函数名等信息
-    outcome = yield
-    rep = outcome.get_result()
-    # 此处初始化文件名
-    logger = logging.getLogger(__name__) # 此处每次调用都会被初始化一次，
-    # we only look at actual test calls, not setup/teardown
-    if rep.when == &quot;call&quot;：
-        # 当测试运行到测试用例本身时，我们可以将需要的信息记录在log中,比如当前测试用例的名字和测试结果，
-        logger.info(f&quot; &#123;&#125;&quot;)
-        logger.info(f&quot;异常信息:&#123;&#125;&quot;)
-        logger.info(f&quot;执行结果:&#123;report.outcome&#125;&quot;) 
-
-
-
-
-
-</code></pre>
-<pre><code class="python3">
-</code></pre>
-<p>b. doxc格式的报告可以用钩子函数+ python-docx模块，还可以插入图片<br>c. 扩展一下，那么也可以生成excel，csv 等格式的报告，此处不再赘述。</p>
-<h3 id="引用（ps-官网才是最好的教程）"><a href="#引用（ps-官网才是最好的教程）" class="headerlink" title="引用（ps:官网才是最好的教程）"></a>引用（ps:官网才是最好的教程）</h3><p><a target="_blank" rel="noopener" href="https://pypi.org/project/pytest-json-report/">https://pypi.org/project/pytest-json-report/</a><br><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.1.x/example/simple.html">https://docs.pytest.org/en/7.1.x/example/simple.html</a><br><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.1.x/reference/customize.html">https://docs.pytest.org/en/7.1.x/reference/customize.html</a></p>
+<h2 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h2><p><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.1.x/reference/customize.html">https://docs.pytest.org/en/7.1.x/reference/customize.html</a><br><a target="_blank" rel="noopener" href="https://tox.wiki/en/4.10.0/">https://tox.wiki/en/4.10.0/</a>  </p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jasmine7625@163.com </span>
