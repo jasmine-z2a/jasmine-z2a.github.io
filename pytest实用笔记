@@ -113,10 +113,40 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(7)</small>
+                <small>(9)</small>
             
         </div>
     </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="工具">
+            <i class="fold iconfont icon-right"></i>
+            工具
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="工具&lt;---&gt;python">
+            
+            python
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
     
         
             
@@ -197,6 +227,10 @@
             
         
     
+        
+            
+        
+    
 </ul>
 <div class="left-bottom">
     <div class="menus">
@@ -214,7 +248,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="7">
+<input type="hidden" id="yelog_site_posts_number" value="9">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -273,6 +307,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>QT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>test</a>
             </li>
         
@@ -286,6 +324,24 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 工具 python "
+           href="/pyqt%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"
+           data-tag="python,QT"
+           data-author="" >
+            <span class="post-title" title="pyqt学习笔记">pyqt学习笔记</span>
+            <span class="post-date" title="2023-08-28 19:28:46">2023/08/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="数据结构学习笔记">数据结构学习笔记</span>
+            <span class="post-date" title="2023-08-23 19:18:23">2023/08/23</span>
+        </a>
         
         
         <a  class="全部文章 测试 pytest "
@@ -334,19 +390,19 @@
         
         
         <a  class="全部文章 后端 "
-           href="/pynote"
-           data-tag="Tools,python"
+           href="/mult-process"
+           data-tag="Python"
            data-author="" >
-            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
+            <span class="post-title" title="多进程多线程">多进程多线程</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
         
         <a  class="全部文章 后端 "
-           href="/mult-process"
-           data-tag="Python"
+           href="/pynote"
+           data-tag="Tools,python"
            data-author="" >
-            <span class="post-title" title="多进程多线程">多进程多线程</span>
+            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
@@ -399,7 +455,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-23 19:14:02'>2023-08-15 14:08</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-29 13:21:37'>2023-08-15 14:08</time>
         
     </div>
     <div class="article-meta">
@@ -484,6 +540,7 @@ $ pytest.main([&quot; --alluredir=./result&quot;])
 <pre><code># 执行命令：allure serve  生成的报告路径
 allure serve result
 </code></pre>
+<p>报告如下图：<br><img src="/../images/allure_rep.jpg" alt="avatar"></p>
 <ol start="3">
 <li>pytest json report 插件，生成json格式的报告</li>
 </ol>

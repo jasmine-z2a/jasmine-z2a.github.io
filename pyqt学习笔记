@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>多进程多线程 | J blog</title>
-  <meta name="keywords" content=" Python ">
-  <meta name="description" content="多进程多线程 | J blog">
+  <title>pyqt学习笔记 | J blog</title>
+  <meta name="keywords" content=" python , QT ">
+  <meta name="description" content="pyqt学习笔记 | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
 <meta property="og:type" content="website">
@@ -424,9 +424,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-mult-process" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-pyqt学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">多进程多线程</h1>
+        <h1 class="article-title">pyqt学习笔记</h1>
     
     <div class="article-meta">
         
@@ -436,7 +436,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="后端">后端</a>
+            <a  data-rel="工具">工具</a> > 
+            
+            <a  data-rel="工具&lt;---&gt;python">python</a>
             
         </span>
         
@@ -444,14 +446,16 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">Python</a>
+            <a class="color2">python</a>
+            
+            <a class="color3">QT</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-23 11:45:44'>2022-08-06 15:47</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-30 20:00:24'>2023-08-28 19:28</time>
         
     </div>
     <div class="article-meta">
@@ -473,7 +477,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-text">进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%BF%9B%E7%A8%8B"><span class="toc-text">创建进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B"><span class="toc-text">线程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">线程与进程的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5"><span class="toc-text">同步与异步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5"><span class="toc-text">同步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5"><span class="toc-text">异步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BB%E5%A1%9E%E4%B8%8E%E9%9D%9E%E9%98%BB%E5%A1%9E"><span class="toc-text">阻塞与非阻塞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%BB%E5%A1%9E"><span class="toc-text">阻塞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E9%98%BB%E5%A1%9E"><span class="toc-text">非阻塞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python-GIL"><span class="toc-text">Python GIL</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lock-RLock"><span class="toc-text">Lock &amp;&amp; RLock</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lock-%E2%80%93-RLock"><span class="toc-text">Lock –&gt; RLock</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8"><span class="toc-text">I&#x2F;O多路复用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8F%E7%A8%8B-Coroutine"><span class="toc-text">协程(Coroutine)</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PYQT%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="toc-text">PYQT学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E8%AF%86QT"><span class="toc-text">初识QT</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -489,67 +493,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><p>进程是对正在运行程序的一个抽象 , 即一个进程就是一个正在执行程序的实例</p>
-<h2 id="创建进程"><a href="#创建进程" class="headerlink" title="创建进程"></a>创建进程</h2><p>操作系统中 , 有4种事件导致进程的创建</p>
-<ol>
-<li>系统初始化 , 启动操作系统时 , 通常会创建若干个进程 , 分为前台进程和后台进程</li>
-<li>执行了正在运行的进程所调用的进程创建系统调用</li>
-<li>用户请求创建一个新的进程</li>
-<li>一个批处理作业的初始化</li>
-</ol>
-<p>从技术上看 , 在所有这些情况中 , 新进程都是由一个已存在的进程执行了一个用于创建进程的系统调用而创建的. 这个进程可以是一个运行的用户进程 , 一个由键盘或鼠标启动的系统进程或者一个批处理管理进程 . 这个进程所做的工作是 , 执行一个用来创建新进程的系统调用 . 在Linux&#x2F;Unix中提供了一个 fork() 系统调用就是用来创建进程的 (子进程) , 当然在Windows中也有相对应的系统调用<br>pid &#x3D; os.fork()</p>
-<ol>
-<li>运行态(该时刻进程实际占用CPU)</li>
-<li>就绪态(可运行 , 但因为其他进程正在运行而暂时停止)</li>
-<li>阻塞态(除非某中外部事件发生 , 否则进程不能运行)</li>
-</ol>
-<p>进程的三种状态之间有四种可能的转换关系</p>
-<p>|一个进程状态 |	另一个进程状态 | 过程  |</p>
-<hr>
-<p>| 运行态  |	阻塞态  |	进程为等待输入而 |<br>| 运行态  |	就绪态  |  调度程序选择另一个进程|<br>| 就绪态  |	运行态  |	调度程序选择这个进程|<br>| 阻塞态  |	就绪态  |	出现有效输入|</p>
-<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><p>在传统操作系统中 , 每个进程有一个地址空间和一个控制线程 , 事实上 , 这几乎就是进程的定义</p>
-<p>所以我们可以知道 , 线程是操作系统能够进程运算调度的最小单位 , 它被包含在进程之中 , 是进程中的实际运作单位 . 不过 , 经常存在在同一个地址空间中准并行运行多个控制线程的情况 , 这些线程就像分离的进程</p>
-<p>一个线程指的是进程中一个单一顺序的控制流 , 一个进程中可以并发多个线程</p>
-<h3 id="线程与进程的区别"><a href="#线程与进程的区别" class="headerlink" title="线程与进程的区别"></a>线程与进程的区别</h3><ol>
-<li>线程是执行的指令集 , 进程是资源的集合</li>
-<li>线程的启动速度要比进程的启动速度要快</li>
-<li>两个线程的执行速度是一样的</li>
-<li>进程与线程的运行速度是没有可比性的</li>
-<li>线程共享创建它的进程的内存空间, 进程的内存是独立的</li>
-<li>两个线程共享的数据都是同一份数据, 两个子进程的数据不是共享的, 而且数据是独立的</li>
-<li>同一个进程的线程之间可以直接交流, 同一个主进程的多个子进程之间是不可以进行交流 , 如果两个进程之间需要通信, 就必须要通过一个中间代理来实现</li>
-<li>一个新的线程很容易被创建, 一个新的进程创建需要对父进程进行一次克隆</li>
-<li>一个线程可以控制和操作同一个进程里的其他线程, 线程与线程之间没有隶属关系 , 但是进程只能操作子进程</li>
-<li>改变主线程, 有可能会影响到其他线程的行为, 但是对于父进程的修改是不会影响子进程</li>
-</ol>
-<h2 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h2><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>所谓同步 , 就是在发出一个功能调用时 , 在没有得到结果之前，该调用就不会返回 . </p>
-<h3 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h3><p>当一个异步功能调用发出后 , 调用者不能立刻得到结果 . 当该异步功能完成后 , 通过状态、通知或回调来通知调用者</p>
-<h2 id="阻塞与非阻塞"><a href="#阻塞与非阻塞" class="headerlink" title="阻塞与非阻塞"></a>阻塞与非阻塞</h2><h3 id="阻塞"><a href="#阻塞" class="headerlink" title="阻塞"></a>阻塞</h3><p>阻塞调用是指调用结果返回之前，当前线程会被挂起（如遇到io操作）。函数只有在得到结果之后才会将阻塞的线程激活。有人也许会把阻塞调用和同步调用等同起来，实际上他是不同的。对于同步调用来说，很多时候当前线程还是激活的，只是从逻辑上当前函数没有返回而已</p>
-<h3 id="非阻塞"><a href="#非阻塞" class="headerlink" title="非阻塞"></a>非阻塞</h3><p>非阻塞和阻塞的概念相对应，指在不能立刻得到结果之前也会立刻返回，同时该函数不会阻塞当前线程</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ol>
-<li>对于进程和线程 , 阅读《现代操作系统》</li>
-<li>并发与并行要注意执行顺序的问题</li>
-<li>同步与异步针对的是函数&#x2F;任务的调用方式 , 是否等待结果</li>
-<li>阻塞与非阻塞针对的是进程或线程 , 阻塞进程则挂起 , 非阻塞即不挂起</li>
-</ol>
-<h3 id="Python-GIL"><a href="#Python-GIL" class="headerlink" title="Python GIL"></a>Python GIL</h3><p>GIL本质就是一把互斥锁 , 即会将并发运行变成串行 , 以此来控制同一时间内共享数据只能被一个任务进行修改 , 从而保证数据的安全性.  </p>
-<p>CPython加入GIL主要的原因是为了降低程序的开发复杂度 , 让你不需要关心内存回收的问题 , 你可以理解为Python解释器里有一个独立的线程 , 每过一段时间它起wake up做一次全局轮询看看哪些内存数据是可以被清空的 , 此时你自己的程序里的线程和Python解释器自己的线程是并发运行的 , 假设你的线程删除了一个变量 , py解释器的垃圾回收线程在清空这个变量的过程中的clearing时刻 , 可能一个其它线程正好又重新给这个还没来及得清空的内存空间赋值了 , 结果就有可能新赋值的数据被删除了 , 为了解决类似的问题 , Python解释器简单粗暴的加了锁 , 即当一个线程运行时 , 其它人都不能动 , 这样就解决了上述的问题 , 这可以说是Python早期版本的遗留问题 . 毕竟Python出来的时候 , 多核处理还没出来呢 , 所以并没有考虑多核问题  </p>
-<h2 id="Lock-RLock"><a href="#Lock-RLock" class="headerlink" title="Lock &amp;&amp; RLock"></a>Lock &amp;&amp; RLock</h2><p>进程也有死锁和递归锁 , 所谓死锁 : 是指两个或两个以上的进程或线程在执行过程中 , 因争夺资源而造成的一种互相等待的现象 , 若无外力作用 , 他们都将无法推进下去 . 此时称系统处于死锁状态或系统产生了死锁 , 这些永远在互相等待的进程称为死锁进程 , 如下</p>
-<p>为了解决这样的问题 , 于是就有了递归锁 , 在Python中为了支持在同一线程中多次请求同一资源 , Python提供了可重入锁RLock  </p>
-<h3 id="Lock-–-RLock"><a href="#Lock-–-RLock" class="headerlink" title="Lock –&gt; RLock"></a>Lock –&gt; RLock</h3><pre><code class="python">
-mutexA = threading.Lock()
-mutexB = threading.Lock()
-# 以上两行修改为
-mutexA = mutexB = threading.RLock()
-# 注意如果仅仅修改后部分,即将Lock() -&gt; RLock()是不行的,那样等于创建了两把递归锁
-</code></pre>
-<h2 id="I-O多路复用"><a href="#I-O多路复用" class="headerlink" title="I&#x2F;O多路复用"></a>I&#x2F;O多路复用</h2><p>I&#x2F;O多路复用是指单个线程中 , 通过记录跟踪每个I&#x2F;O流(sock)的状态 , 来同时管理多个I&#x2F;O流</p>
-<p>在I&#x2F;O多路复用中只要一遇到IO就注册一个事件 , 然后主程序就可以继续干其他的事情了 , 直到IO处理完毕 , 继续恢复之前中断的任务 , 也就是说一个线程可以同时处理多个请求</p>
-<p>** 多进程多线程方式 : **</p>
-<p>创建一个进程 , 进程中由两个线程 , 一个循环检测鼠标点击 , 一个循环检测键盘敲击 , 一旦检测到有情况就再开一个线程去处理 , 然后一直开下去……基本上是由创建进程&#x2F;线程 , 维护进程&#x2F;线程来解决的 , 这样对于CPU的资源是很浪费的</p>
-<p>** IO多路复用(事件驱动) : **</p>
-<p>创建一个事件(消息)队列 , 鼠标点击就往队列中增加一个鼠标点击事件 , 键盘敲击就往队列中增加一个键盘敲击事件 , 创建一个线程(IO线程)负责不断从队列中取出事件 , 根据不同的事件 , 调用不同的函数 , 如onClick() , onKeyDown()等 , 即一个线程解决了所有事件的问题 , 这就是复用<br>比较 : 与多进程多线程技术相比 , I&#x2F;O多路复用最大的优势是系统开销小 , 系统不必创建进程&#x2F;线程 , 也不必维护这些进程&#x2F;线程 , 从而大大减小了系统的开销</p>
-<h2 id="协程-Coroutine"><a href="#协程-Coroutine" class="headerlink" title="协程(Coroutine)"></a>协程(Coroutine)</h2>
+        <h1 id="PYQT学习笔记"><a href="#PYQT学习笔记" class="headerlink" title="PYQT学习笔记"></a>PYQT学习笔记</h1><p>[pyqt6中文教程]<a target="_blank" rel="noopener" href="https://maicss.gitbook.io/pyqt-chinese-tutoral/pyqt6/index">https://maicss.gitbook.io/pyqt-chinese-tutoral/pyqt6/index</a></p>
+<p>如题，本文是用于记录pyqt学习相关，包括但不限于在学习中遇到的问题和解决方案。<br>在了解pyqt前，先了解下什么是QT，背景和用途分别是什么。</p>
+<h2 id="初识QT"><a href="#初识QT" class="headerlink" title="初识QT"></a>初识QT</h2>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jasmine7625@163.com </span>
     </div>
