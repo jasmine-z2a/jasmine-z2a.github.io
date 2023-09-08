@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>数据结构学习笔记 | J blog</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="数据结构学习笔记 | J blog">
+  <title>pytest自定传参 | J blog</title>
+  <meta name="keywords" content=" python , test , pytest ">
+  <meta name="description" content="pytest自定传参 | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
 <meta property="og:type" content="website">
@@ -504,19 +504,40 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-数据结构学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-pytest自定义外部传参" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">数据结构学习笔记</h1>
+        <h1 class="article-title">pytest自定传参</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="python">python</a> > 
+            
+            <a  data-rel="python&lt;---&gt;测试">测试</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">python</a>
+            
+            <a class="color5">test</a>
+            
+            <a class="color2">pytest</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-23 19:18:23'>2023-08-23 19:18</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-08 19:37:47'>2023-09-07 19:12</time>
         
     </div>
     <div class="article-meta">
@@ -538,7 +559,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%82%E6%95%B0%E4%BE%8B%E5%AD%90"><span class="toc-text">自定义参数例子</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -554,7 +575,55 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>运行测试用例时，我们一边用pytest.main([‘args’]), 然后在main中传入参数，或者在pytest.ini中传参数，而这些外部参数大多情况下都是pytest或安装的相关插件所支持的参数，用法如下, 安装allure插件后，需要外部传参：</p>
+<pre><code class="python">pytest.main([&quot; --alluredir=./result&quot;])
+</code></pre>
+<p>那如果我们正好碰到某些需求，然后需要将外部数据以参数的形式传到测试中，这时我门就需要用到钩子函数来帮忙了</p>
+<h3 id="自定义参数例子"><a href="#自定义参数例子" class="headerlink" title="自定义参数例子"></a>自定义参数例子</h3><ol>
+<li>首先还是pytest项目结构</li>
+</ol>
+<pre><code class="bash">test_dir
+├── common.py 
+├── conftest.py
+├── pytest.ini
+├── run_main.py
+└── test_cases
+    ├── test_function_1.py
+    ├── test_function_2.py
+    └── test_function_3.py
+</code></pre>
+<ol start="2">
+<li>在conftest.py文件中定义所需要的外部传参</li>
+</ol>
+<pre><code class="python"># conftest.py
+
+def pytest_addoption(parser):
+    parser.addoption(&quot;--cmd&quot;, action=&quot;store&quot;, default=None, help=&quot;&#39;--cmd&#39; is a new command &quot;)
+
+@pytest.fixture()
+def custom_cmd(request):
+    return request.config.getoption(&quot;--cmd&quot;)
+</code></pre>
+<ol start="3">
+<li>应用<br>a. 在其他的测试用例中使用，则就需要用到fixture的方式一样将函数作为测试函数的参数传入 ,用法如下：</li>
+</ol>
+<pre><code class="python">
+def test_function_1(custom_cmd):
+    print(&quot;custom cmd&quot;, custom_cmd)
+    assert custom_cmd != None
+</code></pre>
+<p>b. 在钩子函数中用，以makereportw为例，用法如下：</p>
+<pre><code class="python">@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+
+    custom_cmd = item.config.getoption(&#39;--cmd&#39;)
+    if rep.when == &quot;call&quot;：
+        ...
+</code></pre>
+<p>实践中出现的唯一问题是，这种request.config.getoption的方式目前在单独的setup，teardown class中是拿不到的，比较简单的方式就是定义全局变量。</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jasmine7625@163.com </span>
     </div>

@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(9)</small>
+                <small>(12)</small>
             
         </div>
     </li>
@@ -195,6 +195,10 @@
     
         
             
+        
+    
+        
+            
                 
     <li>
         <div data-rel="其他">
@@ -225,6 +229,51 @@
     
         
             
+                
+    <li>
+        <div data-rel="me">
+            
+            me
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="python">
+            <i class="fold iconfont icon-right"></i>
+            python
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="python&lt;---&gt;测试">
+            
+            测试
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
         
     
         
@@ -248,7 +297,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="9">
+<input type="hidden" id="yelog_site_posts_number" value="12">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -299,6 +348,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pytest</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>python</a>
             </li>
         
@@ -324,6 +377,33 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 python 测试 "
+           href="/pytest%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A4%96%E9%83%A8%E4%BC%A0%E5%8F%82"
+           data-tag="python,test,pytest"
+           data-author="" >
+            <span class="post-title" title="pytest自定传参">pytest自定传参</span>
+            <span class="post-date" title="2023-09-07 19:12:30">2023/09/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 me "
+           href="/resume-cn"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="resume">resume</span>
+            <span class="post-date" title="2023-09-02 11:17:51">2023/09/02</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="压力测试">压力测试</span>
+            <span class="post-date" title="2023-08-31 18:35:44">2023/08/31</span>
+        </a>
         
         
         <a  class="全部文章 工具 python "
@@ -455,7 +535,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-29 13:21:37'>2023-08-15 14:08</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-08 19:30:47'>2023-08-15 14:08</time>
         
     </div>
     <div class="article-meta">
@@ -536,7 +616,7 @@ pip install allure-pytest
 $ pytest  --alluredir=./result
 $ pytest.main([&quot; --alluredir=./result&quot;])
 </code></pre>
-<p>查看报告时，需要启动allure服务, </p>
+<p>查看报告时，需要启动allure服务，allure服务会读取生成的result数据，然后数据渲染后生成网页显示结果报告；</p>
 <pre><code># 执行命令：allure serve  生成的报告路径
 allure serve result
 </code></pre>
@@ -551,7 +631,7 @@ $ pytest --json-report  “dir”  #后面不跟目录的话默认在当前目�
 $ pytest.main([&quot; --json-report &quot;])
 </code></pre>
 <p>另外一个比较实用的用法是通过plugin来获取用例的测试结果汇总,用法如下：</p>
-<pre><code class="python3">import pytest
+<pre><code class="python">import pytest
 from pytest_jsonreport.plugin import JSONReport
 
 plugin = JSONReport()
@@ -567,7 +647,7 @@ $ pytest  --junitxml=./result/report.xml
 <ol start="5">
 <li>用钩子函数自定义report, 作者本人觉得好用<br>如果你想实现完全自定格式的报告可以考虑用钩子函数实现，<br>a. txt格式的报告可以用钩子函数+ logging模块，举例如下：</li>
 </ol>
-<pre><code class="python3"># 首先可以在pytest.ini文件中定义log文件的格式和参数
+<pre><code class="python"># 首先可以在pytest.ini文件中定义log文件的格式和参数
 文件: pytest.ini
 log_file = &quot;log.txt&quot;   # 文件名，这个选项在这里会将输出的log文件名固定，所以会被覆盖，比较好的处理方式是在pytest.main()中传入log file，见以下用例。
 log_file_level = &quot;INFO&quot;  # 打印的log信息的最低等级，也就是等级在INFO之上的都会被打印出来。
@@ -820,7 +900,7 @@ test_cases/test_function_1.py:19: AssertionError (conftest.py:17)
         width: 100%;
         height: 100%;
         opacity: 0.3;
-        background: url("/img/article-list-background.jpeg");
+        background: url("/img/article-list-background.jpg");
         background-repeat: no-repeat;
         background-position: 50% 0;
         -ms-background-size: cover;
