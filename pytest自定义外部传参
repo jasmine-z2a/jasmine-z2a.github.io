@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(13)</small>
+                <small>(14)</small>
             
         </div>
     </li>
@@ -194,6 +194,21 @@
         
     
         
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="读书笔记">
+            
+            读书笔记
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
             
         
     
@@ -297,7 +312,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="13">
+<input type="hidden" id="yelog_site_posts_number" value="14">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -344,6 +359,10 @@
     <div class="tag-wrapper">
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>读书笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>flask</a>
             </li>
         
@@ -381,6 +400,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 读书笔记 "
+           href="/%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0"
+           data-tag="读书笔记"
+           data-author="" >
+            <span class="post-title" title="纳瓦尔宝典读书笔记">纳瓦尔宝典读书笔记</span>
+            <span class="post-date" title="2023-09-24 13:27:59">2023/09/24</span>
+        </a>
         
         
         <a  class="全部文章 python "
