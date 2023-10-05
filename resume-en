@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>python数据结构 | J blog</title>
-  <meta name="keywords" content=" python ">
-  <meta name="description" content="python数据结构 | J blog">
+  <title>resume-en | J blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="resume-en | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
@@ -558,34 +558,19 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-数据结构学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-resume-en" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">python数据结构</h1>
+        <h1 class="article-title">resume-en</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="python">python</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color2">python</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-10-05 19:26:36'>2023-08-23 19:18</time>
+            发布时间 : <time class="date" title='最后更新: 2023-10-05 23:33:25'>2023-10-05 21:54</time>
         
     </div>
     <div class="article-meta">
@@ -607,7 +592,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#collections%E6%A8%A1%E5%9D%97"><span class="toc-text">collections模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#deque"><span class="toc-text">deque:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#heapq"><span class="toc-text">heapq</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#defaultdict"><span class="toc-text">defaultdict</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -623,14 +608,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="collections模块"><a href="#collections模块" class="headerlink" title="collections模块"></a>collections模块</h2><h3 id="deque"><a href="#deque" class="headerlink" title="deque:"></a>deque:</h3><p>使用 deque(maxlen&#x3D;N) 构造函数会新建一个固定大小的队列。当新的元素加入并且这个队列已满的时候， 最老的元素会自动被移除掉。</p>
-<h3 id="heapq"><a href="#heapq" class="headerlink" title="heapq"></a>heapq</h3><p>堆数据结构<br>从一个集合中获得最大或者最小的 N 个元素列表<br>heapq 模块有两个函数：nlargest() 和 nsmallest()   </p>
-<pre><code class="python">import heapq
-nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
-print(heapq.nlargest(3, nums)) # Prints [42, 37, 23]
-print(heapq.nsmallest(3, nums)) # Prints [-4, 1, 2]
-</code></pre>
-<h3 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h3>
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>
     </div>

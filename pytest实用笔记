@@ -6,15 +6,15 @@
   <meta name="keywords" content=" python , test ">
   <meta name="description" content="pytest基础 | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
+<meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://jasmine-z2a.github.io/about/index.html">
 <meta property="og:site_name" content="J blog">
-<meta property="og:description" content="Welcome to J blog, the website is used to record some knowledge which author think it is useful or interesting">
+<meta property="og:description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-04T10:45:19.000Z">
-<meta property="article:modified_time" content="2023-08-14T10:21:57.621Z">
+<meta property="article:modified_time" content="2023-10-05T15:40:46.806Z">
 <meta property="article:author" content="Jasmine Tang">
 <meta name="twitter:card" content="summary">
 
@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(14)</small>
+                <small>(15)</small>
             
         </div>
     </li>
@@ -170,7 +170,7 @@
         <div data-rel="测试">
             <i class="fold iconfont icon-right"></i>
             测试
-            <small>(2)</small>
+            <small>(3)</small>
         </div>
         
             <ul class="sub hide">
@@ -268,7 +268,7 @@
         <div data-rel="python">
             <i class="fold iconfont icon-right"></i>
             python
-            <small>(2)</small>
+            <small>(3)</small>
         </div>
         
             <ul class="sub hide">
@@ -312,7 +312,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="14">
+<input type="hidden" id="yelog_site_posts_number" value="15">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -363,6 +363,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>压力测试</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>flask</a>
             </li>
         
@@ -402,12 +406,12 @@
     <nav id="title-list-nav">
         
         
-        <a  class="全部文章 读书笔记 "
-           href="/%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0"
-           data-tag="读书笔记"
+        <a  class="全部文章 "
+           href="/resume-en"
+           data-tag=""
            data-author="" >
-            <span class="post-title" title="纳瓦尔宝典读书笔记">纳瓦尔宝典读书笔记</span>
-            <span class="post-date" title="2023-09-24 13:27:59">2023/09/24</span>
+            <span class="post-title" title="resume-en">resume-en</span>
+            <span class="post-date" title="2023-10-05 21:54:56">2023/10/05</span>
         </a>
         
         
@@ -438,9 +442,9 @@
         </a>
         
         
-        <a  class="全部文章 "
+        <a  class="全部文章 测试 "
            href="/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95"
-           data-tag=""
+           data-tag="压力测试"
            data-author="" >
             <span class="post-title" title="压力测试">压力测试</span>
             <span class="post-date" title="2023-08-31 18:35:44">2023/08/31</span>
@@ -456,11 +460,11 @@
         </a>
         
         
-        <a  class="全部文章 "
+        <a  class="全部文章 python "
            href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"
-           data-tag=""
+           data-tag="python"
            data-author="" >
-            <span class="post-title" title="数据结构学习笔记">数据结构学习笔记</span>
+            <span class="post-title" title="python数据结构">python数据结构</span>
             <span class="post-date" title="2023-08-23 19:18:23">2023/08/23</span>
         </a>
         
@@ -489,6 +493,15 @@
            data-author="" >
             <span class="post-title" title="LDAP简介">LDAP简介</span>
             <span class="post-date" title="2023-08-14 18:21:57">2023/08/14</span>
+        </a>
+        
+        
+        <a  class="全部文章 读书笔记 "
+           href="/%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0"
+           data-tag="读书笔记"
+           data-author="" >
+            <span class="post-title" title="纳瓦尔宝典读书笔记">纳瓦尔宝典读书笔记</span>
+            <span class="post-date" title="2023-08-14 13:27:59">2023/08/14</span>
         </a>
         
         
@@ -753,7 +766,7 @@ test_cases/test_function_1.py:19: AssertionError (conftest.py:17)
 <h3 id="引用（ps-官网才是最好的教程）"><a href="#引用（ps-官网才是最好的教程）" class="headerlink" title="引用（ps:官网才是最好的教程）"></a>引用（ps:官网才是最好的教程）</h3><p><a target="_blank" rel="noopener" href="https://pypi.org/project/pytest-json-report/">https://pypi.org/project/pytest-json-report/</a><br><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.1.x/example/simple.html">https://docs.pytest.org/en/7.1.x/example/simple.html</a><br><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.1.x/reference/customize.html">https://docs.pytest.org/en/7.1.x/reference/customize.html</a></p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jasmine7625@163.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>
     </div>
 </article>
 
@@ -775,7 +788,7 @@ test_cases/test_function_1.py:19: AssertionError (conftest.py:17)
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2016-2020 Jasmine
+    ©2023-2024 Jasmine Tang
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
