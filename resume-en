@@ -589,7 +589,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-10-05 23:53:22'>2023-10-05 21:54</time>
+            发布时间 : <time class="date" title='最后更新: 2023-10-06 16:42:44'>2023-10-05 21:54</time>
         
     </div>
     <div class="article-meta">
@@ -633,7 +633,7 @@
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
       <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">请输入密码后查看(手机号后六位)</span>
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Please enter the password to view (the last six digits of the blogger’s mobile phone number)</span>
       </label>
     </div>
   </div>
