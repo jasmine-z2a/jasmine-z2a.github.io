@@ -249,7 +249,7 @@
         <div data-rel="me">
             
             me
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -363,6 +363,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>其他</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>压力测试</a>
             </li>
         
@@ -406,9 +410,9 @@
     <nav id="title-list-nav">
         
         
-        <a  class="全部文章 "
+        <a  class="全部文章 me "
            href="/resume-en"
-           data-tag=""
+           data-tag="其他"
            data-author="" >
             <span class="post-title" title="resume-en">resume-en</span>
             <span class="post-date" title="2023-10-05 21:54:56">2023/10/05</span>
@@ -435,7 +439,7 @@
         
         <a  class="全部文章 me "
            href="/resume-cn"
-           data-tag=""
+           data-tag="其他"
            data-author="" >
             <span class="post-title" title="resume">resume</span>
             <span class="post-date" title="2023-09-02 11:17:51">2023/09/02</span>

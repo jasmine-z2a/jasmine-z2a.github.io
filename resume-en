@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>resume-en | J blog</title>
-  <meta name="keywords" content="">
+  <meta name="keywords" content=" 其他 ">
   <meta name="description" content="resume-en | J blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
@@ -249,7 +249,7 @@
         <div data-rel="me">
             
             me
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -363,6 +363,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>其他</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>压力测试</a>
             </li>
         
@@ -406,9 +410,9 @@
     <nav id="title-list-nav">
         
         
-        <a  class="全部文章 "
+        <a  class="全部文章 me "
            href="/resume-en"
-           data-tag=""
+           data-tag="其他"
            data-author="" >
             <span class="post-title" title="resume-en">resume-en</span>
             <span class="post-date" title="2023-10-05 21:54:56">2023/10/05</span>
@@ -435,7 +439,7 @@
         
         <a  class="全部文章 me "
            href="/resume-cn"
-           data-tag=""
+           data-tag="其他"
            data-author="" >
             <span class="post-title" title="resume">resume</span>
             <span class="post-date" title="2023-09-02 11:17:51">2023/09/02</span>
@@ -566,11 +570,26 @@
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="me">me</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">其他</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-10-05 23:33:25'>2023-10-05 21:54</time>
+            发布时间 : <time class="date" title='最后更新: 2023-10-05 23:53:22'>2023-10-05 21:54</time>
         
     </div>
     <div class="article-meta">
@@ -608,7 +627,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="8ce21b8efdf8c29e74626856e8eb64f1ead3b6240ecd6785f27b362d75ec877d">fb7ca8abfa42d0cebaddf27512beff51eb8400b9c63e3c6744b9bb6a43982efc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">请输入密码后查看(手机号后六位)</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>
     </div>
