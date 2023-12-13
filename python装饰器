@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>进程，线程基础知识 | JT blog</title>
-  <meta name="keywords" content=" Tools , python ">
-  <meta name="description" content="进程，线程基础知识 | JT blog">
+  <title>python装饰器 | JT blog</title>
+  <meta name="keywords" content=" python ">
+  <meta name="description" content="python装饰器 | JT blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
@@ -571,9 +571,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-pynote" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-python装饰器" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">进程，线程基础知识</h1>
+        <h1 class="article-title">python装饰器</h1>
     
     <div class="article-meta">
         
@@ -583,15 +583,13 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="后端">后端</a>
+            <a  data-rel="python">python</a>
             
         </span>
         
         
         <span class="tag">
             <i class="iconfont icon-tag"></i>
-            
-            <a class="color1">Tools</a>
             
             <a class="color2">python</a>
             
@@ -600,7 +598,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-23 11:45:15'>2022-08-06 15:47</time>
+            发布时间 : <time class="date" title='最后更新: 2023-12-13 14:58:24'>2023-11-16 15:25</time>
         
     </div>
     <div class="article-meta">
@@ -622,7 +620,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%88IPC%EF%BC%89"><span class="toc-text">进程间通信（IPC）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%BB%E9%94%81%E5%8F%8A%E5%85%B6%E5%A4%84%E7%90%86"><span class="toc-text">死锁及其处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E7%BA%BF%E7%A8%8BGIL"><span class="toc-text">python线程GIL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB%E8%81%94%E7%B3%BB"><span class="toc-text">进程线程的区别联系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB%E8%81%94%E7%B3%BB"><span class="toc-text">区别联系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E5%B9%B6%E5%8F%91"><span class="toc-text">IO并发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IO-%E5%88%86%E7%B1%BB"><span class="toc-text">IO 分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%BB%E5%A1%9EIO"><span class="toc-text">阻塞IO</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8"><span class="toc-text">迭代器和生成器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-text">迭代器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%99%A8"><span class="toc-text">生成器</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85"><span class="toc-text">什么是闭包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AD%E5%8C%85%E5%92%8C%E8%A3%85%E9%A5%B0%E5%99%A8%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">闭包和装饰器的关系</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A3%85%E9%A5%B0%E5%99%A8"><span class="toc-text">什么是装饰器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A3%85%E9%A5%B0%E5%99%A8%E7%B1%BB"><span class="toc-text">装饰器类</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -638,180 +636,127 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>查看进程树： pstree</p>
-</blockquote>
-<ul>
-<li><p>进程状态</p>
-<ul>
-<li>三态<br>就绪态 ： 进程具备执行条件，等待分配cpu资源<br>运行态 ： 进程占有cpu时间片正在运行<br>等待态 ： 进程暂时停止运行，让出cpu<br>新建 ： 创建一个进程，获取资源的过程<br>终止 ： 进程结束，释放资源的过程</li>
-</ul>
-</li>
-<li><p>进程的运行特征<br>【1】 多进程可以更充分使用计算机多核资源<br>【2】 进程之间的运行互不影响，各自独立<br>【3】 每个进程拥有独立的空间，各自使用自己空间资源</p>
-</li>
-</ul>
-<ol>
-<li>孤儿进程 ： 父进程先于子进程退出，此时子进程成为孤儿进程。</li>
-</ol>
-<blockquote>
-<p>特点： 孤儿进程会被系统进程收养，此时系统进程就会成为孤儿进程新的父进程，孤儿进程退出该进程会自动处理。</p>
-</blockquote>
-<ol start="2">
-<li>僵尸进程 ： 子进程先于父进程退出，父进程又没有处理子进程的退出状态，此时子进程就会称为僵尸进程。</li>
-</ol>
-<blockquote>
-<p>特点： 僵尸进程虽然结束，但是会存留部分PCB在内存中，大量的僵尸进程会浪费系统的内存资源。</p>
-</blockquote>
-<ol start="3">
-<li>如何避免僵尸进程产生</li>
-</ol>
-<ul>
-<li>使用wait函数处理子进程退出</li>
-</ul>
-<p>  pid,status &#x3D; os.wait()<br>    功能：在父进程中阻塞等待处理子进程退出<br>    返回值： pid  退出的子进程的PID<br>        status  子进程退出状态</p>
-<h2 id="进程间通信（IPC）"><a href="#进程间通信（IPC）" class="headerlink" title="进程间通信（IPC）"></a>进程间通信（IPC）</h2><ol>
-<li><p>必要性： 进程间空间独立，资源不共享，此时在需要进程间数据传输时就需要特定的手段进行数据通信。</p>
-</li>
-<li><p>常用进程间通信方法</p>
-</li>
-</ol>
-<blockquote>
-<p>管道  消息队列  共享内存  信号  信号量  套接字 </p>
-</blockquote>
-<ol>
-<li>通信方法</li>
-</ol>
-<blockquote>
-<p>线程间使用全局变量进行通信</p>
-</blockquote>
-<ol start="2">
-<li>共享资源争夺</li>
-</ol>
-<ul>
-<li><p>共享资源：多个进程或者线程都可以操作的资源称为共享资源。对共享资源的操作代码段称为临界区。</p>
-</li>
-<li><p>影响 ： 对共享资源的无序操作可能会带来数据的混乱，或者操作错误。此时往往需要同步互斥机制协调操作顺序。</p>
-</li>
-</ul>
-<ol start="3">
-<li>同步互斥机制</li>
-</ol>
-<blockquote>
-<p>同步 ： 同步是一种协作关系，为完成操作，多进程或者线程间形成一种协调，按照必要的步骤有序执行操作。<br>互斥 ： 互斥是一种制约关系，当一个进程或者线程占有资源时会进行加锁处理，此时其他进程线程就无法操作该资源，直到解锁后才能操作。</p>
-</blockquote>
-<h3 id="死锁及其处理"><a href="#死锁及其处理" class="headerlink" title="死锁及其处理"></a>死锁及其处理</h3><ol>
-<li>定义</li>
-</ol>
-<blockquote>
-<p>死锁是指两个或两个以上的线程在执行过程中，由于竞争资源或者由于彼此通信而造成的一种阻塞的现象，若无外力作用，它们都将无法推进下去。此时称系统处于死锁状态或系统产生了死锁。</p>
-</blockquote>
-<p>死锁发生的必要条件:</p>
-<ul>
-<li>互斥条件：指线程对所分配到的资源进行排它性使用，即在一段时间内某资源只由一个进程占用。如果此时还有其它进程请求资源，则请求者只能等待，直至占有资源的进程用毕释放。</li>
-<li>请求和保持条件：指线程已经保持至少一个资源，但又提出了新的资源请求，而该资源已被其它进程占有，此时请求线程阻塞，但又对自己已获得的其它资源保持不放。</li>
-<li>不剥夺条件：指线程已获得的资源，在未使用完之前，不能被剥夺，只能在使用完时由自己释放,通常CPU内存资源是可以被系统强行调配剥夺的。</li>
-<li>环路等待条件：指在发生死锁时，必然存在一个线程——资源的环形链，即进程集合{T0，T1，T2，···，Tn}中的T0正在等待一个T1占用的资源；T1正在等待T2占用的资源，……，Tn正在等待已被T0占用的资源。</li>
-</ul>
-<p>死锁的产生原因</p>
-<blockquote>
-<ul>
-<li>当前线程拥有其他线程需要的资源</li>
-<li>当前线程等待其他线程已拥有的资源</li>
-<li>都不放弃自己拥有的资源</li>
-</ul>
-</blockquote>
-<h2 id="python线程GIL"><a href="#python线程GIL" class="headerlink" title="python线程GIL"></a>python线程GIL</h2><ol>
-<li>python线程的GIL问题 （全局解释器锁）</li>
-</ol>
-<blockquote>
-<p>什么是GIL ：由于python解释器设计中加入了解释器锁，导致python解释器同一时刻只能解释执行一个线程，大大降低了线程的执行效率。</p>
-</blockquote>
-<blockquote>
-<p>导致后果： 因为遇到阻塞时线程会主动让出解释器，去解释其他线程。所以python多线程在执行多阻塞高延迟IO时可以提升程序效率，其他情况并不能对效率有所提升。</p>
-</blockquote>
-<blockquote>
-<p>GIL问题建议</p>
-<ul>
-<li>尽量使用进程完成无阻塞的并发行为</li>
-<li>不使用c作为解释器 （Java  C#）</li>
-</ul>
-</blockquote>
-<ol start="2">
-<li>结论 ： 在无阻塞状态下，多线程程序和单线程程序执行效率几乎差不多，甚至还不如单线程效率。但是多进程运行相同内容却可以有明显的效率提升。</li>
-</ol>
-<h2 id="进程线程的区别联系"><a href="#进程线程的区别联系" class="headerlink" title="进程线程的区别联系"></a>进程线程的区别联系</h2><h3 id="区别联系"><a href="#区别联系" class="headerlink" title="区别联系"></a>区别联系</h3><ol>
-<li><p>两者都是多任务编程方式，都能使用计算机多核资源</p>
-</li>
-<li><p>进程的创建删除消耗的计算机资源比线程多</p>
-</li>
-<li><p>进程空间独立，数据互不干扰，有专门通信方法；线程使用全局变量通信</p>
-</li>
-<li><p>一个进程可以有多个分支线程，两者有包含关系</p>
-</li>
-<li><p>多个线程共享进程资源，在共享资源操作时往往需要同步互斥处理</p>
-</li>
-<li><p>进程线程在系统中都有自己的特有属性标志，如ID,代码段，命令集等。</p>
-</li>
-<li><p>循环服务器模型 ：循环接收客户端请求，处理请求。同一时刻只能处理一个请求，处理完毕后再处理下一个。</p>
-</li>
-</ol>
-<blockquote>
-<p>优点：实现简单，占用资源少<br>缺点：无法同时处理多个客户端请求</p>
-</blockquote>
-<blockquote>
-<p>适用情况：处理的任务可以很快完成，客户端无需长期占用服务端程序。udp比tcp更适合循环</p>
-</blockquote>
-<p>基于threading的多线程网络并发</p>
-<ol>
-<li>创建监听套接字</li>
-<li>循环接收客户端连接请求</li>
-<li>当有新的客户端连接创建线程处理客户端请求</li>
-<li>主线程继续等待其他客户端连接</li>
-<li>当客户端退出，则对应分支线程退出</li>
-</ol>
-<h2 id="IO并发"><a href="#IO并发" class="headerlink" title="IO并发"></a>IO并发</h2><h3 id="IO-分类"><a href="#IO-分类" class="headerlink" title="IO 分类"></a>IO 分类</h3><blockquote>
-<p>IO分类：阻塞IO ，非阻塞IO，IO多路复用，异步IO等</p>
-</blockquote>
-<h4 id="阻塞IO"><a href="#阻塞IO" class="headerlink" title="阻塞IO"></a>阻塞IO</h4><p>1.定义：在执行IO操作时如果执行条件不满足则阻塞。阻塞IO是IO的默认形态。</p>
-<p>2.效率：阻塞IO是效率很低的一种IO。但是由于逻辑简单所以是默认IO行为。</p>
-<p>3.阻塞情况：</p>
-<ul>
-<li><p>因为某种执行条件没有满足造成的函数阻塞<br>e.g.  accept   input   recv</p>
-</li>
-<li><p>处理IO的时间较长产生的阻塞状态<br>e.g. 网络传输，大文件读写</p>
-</li>
-</ul>
-<h2 id="迭代器和生成器"><a href="#迭代器和生成器" class="headerlink" title="迭代器和生成器"></a>迭代器和生成器</h2><h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>迭代操作(for)循环的对象,可以像列表一样迭代获取其中的元素,实现了__next__方法<br>区别是,延迟计算,调用时才防护元素</p>
-<pre><code>class Fib:
-  def __init__(self, n):
-    self.prev = 0
-    self.cur = 1
-    self.n = n
-  
-  def __iter__(self):
-    return self
-  
-  def __next__(self):
-    if self.n &gt; 0:
-      value = self.cur
-      self.cur = self.cur + self.prev
-      self.prev = value
-      self.n -= 1
-      return value
-    else:
-      raise StopIteration()
-
-f = Fib(10)
-print([i for i in f])
+        <h2 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h2><p>在了解装饰器之前，我们可以现了解一下什么是闭包(Closeure)<br>闭包（Closure）是指在一个函数内部定义的函数，且内部函数可以访问外部函数的局部变量。换句话说，闭包是一个函数对象，它引用了在其定义外部的非全局变量。</p>
+<h2 id="闭包和装饰器的关系"><a href="#闭包和装饰器的关系" class="headerlink" title="闭包和装饰器的关系"></a>闭包和装饰器的关系</h2><p>闭包作为装饰器的一种实现方式：<br>由于装饰器是一个函数，而闭包是定义在函数内部的函数，因此装饰器本身就是一种闭包。在装饰器的实现中，内部函数通常就是一个闭包，它可以引用外部函数的参数或局部变量。</p>
+<p>闭包用于实现装饰器的状态保持：<br>闭包常常用于在装饰器中保持一些状态信息。例如，一个计数器装饰器可以使用闭包来保持计数器的状态。通过在闭包中引用外部变量，装饰器可以在函数调用之间保持一些状态。s</p>
+<h1 id="什么是装饰器"><a href="#什么是装饰器" class="headerlink" title="什么是装饰器"></a>什么是装饰器</h1><p>装饰器(decorator)是python语法中的一项独特特性，装饰器允许您通过在函数或方法定义之前使用 @decorator 语法糖来修改函数或方法的行为。以下是一个普通的装饰器：  </p>
+<pre><code class="python">from functools import wraps
+def decorator_name(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        if not can_run:
+            return &quot;Function will not run&quot;
+        return f(*args, **kwargs)
+    return decorated
 </code></pre>
-<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><p>用关键字yield来返回值的函数是生成器函数,该函数调用时会返回一个生成器对象,不会立刻返回,调用next方法才返回(for 调用 next方法)</p>
-<pre><code class="python3">def fib(n):
-  prev, curr = 0, 1
-  while n &gt; 0:
-      n -= 1
-      yield curr
-      prev, curr = curr, curr + prev
-print([i for i in fib(10)])
+<p>其中wraps也是一个装饰器，用于解决装饰器可能引起的一些问题，特别是与函数文档字符串（__doc__）和函数名称（__name__）相关的问题。wraps 被用来确保被装饰的函数保留原始函数的信息。也就是用来保持函数的元信息<br>在一个装饰器中，如果不使用 functools.wraps，那么被装饰的函数的名称和文档字符串可能会变成装饰器内部函数的名称和文档字符串。这可能导致在使用被装饰函数时出现一些意外的行为。</p>
+<p>简言之，装饰器的运用的几个特点：</p>
+<ol>
+<li>使用@decorator语法糖装饰其他函数</li>
+</ol>
+<pre><code class="python"># 正确用法 装饰用def定义的函数体本身
+@decorator
+def function():
+    &quot;&quot;&quot;这是被装饰的函数&quot;&quot;&quot;
+    print(&quot;function&quot;)
+    return 
+
+# 错误用法 装饰调用的函数，这么写会报语法错误
+@decorator
+function()
+</code></pre>
+<ol start="2">
+<li>会将def定义的函数作为参数传给装饰器,然后在装饰器内部，我们可以对该函数的输入和输出进行操作，以及做一些拦截函数执行的操作，比如很多后台服务接口要验证是否是登录，登录才能使用该接口等，如下：</li>
+</ol>
+<pre><code class="python">def decorator(func):
+    def wrapper(*args,**kwargs):
+        # 获取func name
+        print(f&quot;funtion name:&#123;func.__name__&#125;&quot;)
+        
+        # 获取被装饰的函数的参数
+        print(args, kwargs)
+
+        # 不对函数结果处理的话，可以直接返回函数本身
+        return func(*args, **kwargs)
+
+        # 对函数的结果做处理：
+        res = func(*args,**kwargs)
+        if res:
+            pass
+            return 
+        else:
+            pass
+            return
+
+    return wrapper
+
+</code></pre>
+<ol start="3">
+<li>给装饰器传参,如果只是死记它的用法，那很简单，无非是比不传参数的多包裹一层函数，要理解为什么这么写：</li>
+</ol>
+<pre><code class="python"># 这是一个带参数的的装饰器的基本用法
+from function import wraps
+import logging
+
+@logged(level, name=None, message=None)
+def test_add(a:int,b:int):
+    print(&quot;a + b = &#123;&#125;&quot;.format(a+b))
+
+# 用括弧执行起来是这样的，如下：
+logged(level)(test_add)()
+也就是相当于在decorator外多了一层用来接受参数,写法如下：
+def logged(level, name=None, message=None):
+    &quot;&quot;&quot;
+    Add logging to a function. level is the logging
+    level, name is the logger name, and message is the
+    log message. If name and message aren&#39;t specified,
+    they default to the function&#39;s module and name.
+    &quot;&quot;&quot;
+    def decorate(func):
+        logname = name if name else func.__module__
+        log = logging.getLogger(logname)
+        logmsg = message if message else func.__name__
+
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            log.log(level, logmsg)
+            return func(*args, **kwargs)
+        return wrapper
+    return decorate
+</code></pre>
+<h2 id="装饰器类"><a href="#装饰器类" class="headerlink" title="装饰器类"></a>装饰器类</h2><p>不带参数的类装饰器<br><strong>init</strong> ：接收被装饰函数<br><strong>call</strong> ：实现装饰逻辑</p>
+<pre><code class="python"># Use of the __call__ method in Python
+class DecoratorClass:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self,*args,**kwargs):
+        print(&#39;the function &#123;&#125;() is running...&#39;).format(self.func.__name__)
+        # Code before the function call
+        self.func(*args,**kwargs)
+        # Code after the function call
+        return 
+</code></pre>
+<p>带参数的类装饰器<br>注意这块的参数是在__init__这里初始化的，</p>
+<pre><code class="python">class DecoratorClass:
+    def __init__(self,params):
+        self.params = params
+
+    def __call__(self,func):
+        def wrapper(*args,**kwargs):
+            print(&#39;&#123;level&#125;: the function &#123;func&#125; () is running...&#39;).format(level=self.level, func=func.__name__)
+            func(*args,**kwargs)
+        return wrapper
+
+
+# 使用
+@DecoratorClass(params=&quot;params&quot;)
+def func(a,b):
+    print(&quot;a + b =&quot;, a+b)
+    return a+b
+
+# 调用
+func()
 </code></pre>
 
       

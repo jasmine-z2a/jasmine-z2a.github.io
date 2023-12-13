@@ -2,15 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>resume-en | J blog</title>
+  <title>resume-en | JT blog</title>
   <meta name="keywords" content=" 其他 ">
-  <meta name="description" content="resume-en | J blog">
+  <meta name="description" content="resume-en | JT blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://jasmine-z2a.github.io/about/index.html">
-<meta property="og:site_name" content="J blog">
+<meta property="og:site_name" content="JT blog">
 <meta property="og:description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-04T10:45:19.000Z">
@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(15)</small>
+                <small>(16)</small>
             
         </div>
     </li>
@@ -268,7 +268,7 @@
         <div data-rel="python">
             <i class="fold iconfont icon-right"></i>
             python
-            <small>(3)</small>
+            <small>(4)</small>
         </div>
         
             <ul class="sub hide">
@@ -312,7 +312,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="15">
+<input type="hidden" id="yelog_site_posts_number" value="16">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -408,6 +408,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 python "
+           href="/python%E8%A3%85%E9%A5%B0%E5%99%A8"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python装饰器">python装饰器</span>
+            <span class="post-date" title="2023-11-16 15:25:12">2023/11/16</span>
+        </a>
         
         
         <a  class="全部文章 python "
@@ -528,19 +537,19 @@
         
         
         <a  class="全部文章 后端 "
-           href="/mult-process"
-           data-tag="Python"
+           href="/pynote"
+           data-tag="Tools,python"
            data-author="" >
-            <span class="post-title" title="多进程多线程">多进程多线程</span>
+            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
         
         <a  class="全部文章 后端 "
-           href="/pynote"
-           data-tag="Tools,python"
+           href="/mult-process"
+           data-tag="Python"
            data-author="" >
-            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
+            <span class="post-title" title="多进程多线程">多进程多线程</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
@@ -589,7 +598,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-10-09 23:18:37'>2023-09-05 21:54</time>
+            发布时间 : <time class="date" title='最后更新: 2023-12-11 18:48:23'>2023-09-05 21:54</time>
         
     </div>
     <div class="article-meta">
@@ -628,7 +637,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c765f9eaf27aabcc82b733d6669b8c84c3cf046311fe657797b08ba954ee741d">fb7ca8abfa42d0cebaddf27512beff517b154cbe8137255ac8302c7ea23eda13ad48b88aa469ac7d89c3ad5879e0d1a9fb58ec7300e79e9e52e57121d0b2bae5e469f826cbaa794934575d09cc29bd877de91514a464890646c11f5b34ebbd65b4d995a448cff3028d9a6983641499ebac00a2d4d462e40b05e15261afc8c2251bacc48425fb3aac79a25110c0905c9ae3fd40a08d0dbaf6a3a3b8eeb303a4f25d902f2afa4e86a7528f5d6bf1f7b83d09ab9dc5990760343cb2c35d7bb55453</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="4f3a50dcb535b8ec0099f03fc7bc1f03e33527355243a402b708c7bbb6017383">fb7ca8abfa42d0cebaddf27512beff517b154cbe8137255ac8302c7ea23eda13ad48b88aa469ac7d89c3ad5879e0d1a9fb58ec7300e79e9e52e57121d0b2bae5e469f826cbaa794934575d09cc29bd877de91514a464890646c11f5b34ebbd65b4d995a448cff3028d9a6983641499ebac00a2d4d462e40b05e15261afc8c2251bacc48425fb3aac79a25110c0905c9ae3fd40a08d0dbaf6a3a3b8eeb303a4f25d902f2afa4e86a7528f5d6bf1f7b83d736dabf94d504ae498998ca94ecf11f6a125151b18e1282634a6d6098650108ce25b71d88db7f023618160f686a6ba1799b022c03e38942ae4d7ffe119ee35b16f079b322b611511d83a17d65fefc14c3b9ab0edc45cedb4ab26b4a6504a152a9c40c1c7254d27ed018924000e6b0ab908f81aea8c0fe5f8e815c5a1c8b41a4c9fad5e85549030d554681c9d1e8270275a834f0a25c7310efef9b2911d6c654c8bf68b9918822cf97e63a25a1cbcc85b4447bde918706e320a11073b7da1bdb789a607937d06bee27f6651d36749b32cf0ae2c73c713579c9c44539983e5047b</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
