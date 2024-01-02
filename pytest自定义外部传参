@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(16)</small>
+                <small>(18)</small>
             
         </div>
     </li>
@@ -157,6 +157,36 @@
             后端
             <small>(2)</small>
         </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="数据库">
+            <i class="fold iconfont icon-right"></i>
+            数据库
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="数据库&lt;---&gt;中间件">
+            
+            中间件
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
         
     </li>
 
@@ -229,6 +259,10 @@
     
         
             
+        
+    
+        
+            
                 
     <li>
         <div data-rel="CS基础">
@@ -268,7 +302,7 @@
         <div data-rel="python">
             <i class="fold iconfont icon-right"></i>
             python
-            <small>(4)</small>
+            <small>(5)</small>
         </div>
         
             <ul class="sub hide">
@@ -312,7 +346,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="16">
+<input type="hidden" id="yelog_site_posts_number" value="18">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -367,6 +401,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>压力测试</a>
             </li>
         
@@ -395,6 +433,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>test</a>
             </li>
         
@@ -408,6 +450,24 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 数据库 中间件 "
+           href="/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3"
+           data-tag="数据库,SQL"
+           data-author="" >
+            <span class="post-title" title="数据库相关">数据库相关</span>
+            <span class="post-date" title="2024-01-01 00:41:57">2024/01/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 python "
+           href="/python-basic"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python basic">python basic</span>
+            <span class="post-date" title="2023-12-14 19:06:47">2023/12/14</span>
+        </a>
         
         
         <a  class="全部文章 python "
@@ -537,19 +597,19 @@
         
         
         <a  class="全部文章 后端 "
-           href="/pynote"
-           data-tag="Tools,python"
+           href="/mult-process"
+           data-tag="Python"
            data-author="" >
-            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
+            <span class="post-title" title="多进程多线程">多进程多线程</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         
         
         <a  class="全部文章 后端 "
-           href="/mult-process"
-           data-tag="Python"
+           href="/pynote"
+           data-tag="Tools,python"
            data-author="" >
-            <span class="post-title" title="多进程多线程">多进程多线程</span>
+            <span class="post-title" title="进程，线程基础知识">进程，线程基础知识</span>
             <span class="post-date" title="2022-08-06 15:47:09">2022/08/06</span>
         </a>
         

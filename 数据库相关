@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CORS相关 | JT blog</title>
-  <meta name="keywords" content=" Tools ">
-  <meta name="description" content="CORS相关 | JT blog">
+  <title>数据库相关 | JT blog</title>
+  <meta name="keywords" content=" 数据库 , SQL ">
+  <meta name="description" content="数据库相关 | JT blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
@@ -631,9 +631,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-CORS" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-数据库相关" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">CORS相关</h1>
+        <h1 class="article-title">数据库相关</h1>
     
     <div class="article-meta">
         
@@ -643,7 +643,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="CS基础">CS基础</a>
+            <a  data-rel="数据库">数据库</a> > 
+            
+            <a  data-rel="数据库&lt;---&gt;中间件">中间件</a>
             
         </span>
         
@@ -651,14 +653,16 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color1">Tools</a>
+            <a class="color4">数据库</a>
+            
+            <a class="color4">SQL</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-14 18:21:57'>2023-08-06 15:47</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-02 21:01:31'>2024-01-01 00:41</time>
         
     </div>
     <div class="article-meta">
@@ -680,7 +684,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B7%A8%E6%BA%90%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB%EF%BC%88CORS%EF%BC%89"><span class="toc-text">跨源资源共享（CORS）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%EF%BC%9A"><span class="toc-text">名词解释：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F-cross-orgin-%EF%BC%9A"><span class="toc-text">跨域(cross-orgin)：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5-same-orign-policy-%EF%BC%9A"><span class="toc-text">同源策略(same-orign policy)：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB-Cross-origin-resource-sharing-%EF%BC%9A"><span class="toc-text">跨域资源共享(Cross-origin resource sharing)：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">解决跨域的常用方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5"><span class="toc-text">项目实践</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-text">链接</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E7%B1%BB"><span class="toc-text">数据库分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93-NoSQL"><span class="toc-text">非关系型数据库(NoSQL)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-text">数据库管理系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1"><span class="toc-text">数据库事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSQL"><span class="toc-text">什么是SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RDBMS"><span class="toc-text">RDBMS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%AF%AD%E6%B3%95"><span class="toc-text">SQL语法</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -696,30 +700,60 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="跨源资源共享（CORS）"><a href="#跨源资源共享（CORS）" class="headerlink" title="跨源资源共享（CORS）"></a>跨源资源共享（CORS）</h1><h2 id="名词解释："><a href="#名词解释：" class="headerlink" title="名词解释："></a>名词解释：</h2><h3 id="跨域-cross-orgin-："><a href="#跨域-cross-orgin-：" class="headerlink" title="跨域(cross-orgin)："></a>跨域(cross-orgin)：</h3><pre><code>一个url是由：协议、域名、端口 三部分组成,当一个网页向另一个网页发起请求时，请求的url的协议、域名、端口三者之间的任意一个与当前页面url不同即为跨域
+        <h1 id="数据库概念"><a href="#数据库概念" class="headerlink" title="数据库概念"></a>数据库概念</h1><p>简而言之可视为电子化的文件柜——存储电子文件的处所，用户可以对文件中的资料执行新增、截取、更新、删除等操作。</p>
+<h2 id="数据库分类"><a href="#数据库分类" class="headerlink" title="数据库分类"></a>数据库分类</h2><p>随着数据库技术与其他分支学科技术的结合，出现了多种新型数据库，例如：与分布处理技术结合产生的分布式数据库、与并行处理技术结合产生的并行数据库、与人工智能结合产生的演绎数据库、与多媒体技术结合产生的多媒体数据库。另外，数据库技术应用于特定的领域，出现了工程数据库、 地理数据库、统计数据库、空间数据库等特定领域数据库。</p>
+<h3 id="关系型数据库"><a href="#关系型数据库" class="headerlink" title="关系型数据库"></a>关系型数据库</h3><p>Mysql MariaDB PostgreSQL<br>Microsoft Access<br>Microsoft SQL Server<br>Oracle数据库 Sybase<br>Clipper FoxPro foshub<br>几乎所有的数据库管理系统都配备了一个开放式数据库连接（ODBC）驱动程序，令各个数据库之间得以互相集成。</p>
+<h3 id="非关系型数据库-NoSQL"><a href="#非关系型数据库-NoSQL" class="headerlink" title="非关系型数据库(NoSQL)"></a>非关系型数据库(NoSQL)</h3><p>BigTable（Google）Cassandra MongoDB CouchDB Redis</p>
+<h2 id="数据库管理系统"><a href="#数据库管理系统" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h2><p>是为管理数据库而设计的电脑软件系统，一般具有存储、截取、安全保障、备份等基础功能。</p>
+<h2 id="数据库事务"><a href="#数据库事务" class="headerlink" title="数据库事务"></a>数据库事务</h2><p>事务（transaction）包含一组数据库操作的逻辑工作单元，在事务中包含的数据库操作是不可分割的整体，这些操作要么一起做，要么一起回滚（Roll Back）到执行前的状态。 事务的ACID特性：<br>原子性（atomicity）<br>一致性（consistency）<br>隔离性（isolation）<br>持续性（durability）<br>事务的并发性是指多个事务的并行操作轮流交叉运行，事务的并发可能会访问和存储不正确的数据，破坏交易的隔离性和数据库的一致性。 </p>
+<h2 id="什么是SQL"><a href="#什么是SQL" class="headerlink" title="什么是SQL"></a>什么是SQL</h2><p>SQL (Structured Query Language:结构化查询语言),是用于管理关系数据库管理系统（RDBMS）。SQL 的范围包括数据插入、查询、更新和删除，数据库模式创建和修改，以及数据访问控制。<br>SQL 在1986年成为 ANSI（American National Standards Institute 美国国家标准化组织）的一项标准，在 1987 年成为国际标准化组织（ISO）标准。</p>
+<h3 id="RDBMS"><a href="#RDBMS" class="headerlink" title="RDBMS"></a>RDBMS</h3><p>RDBMS 指关系型数据库管理系统，全称 Relational Database Management System。<br>RDBMS 中的数据存储在被称为表的数据库对象中。</p>
+<h2 id="SQL语法"><a href="#SQL语法" class="headerlink" title="SQL语法"></a>SQL语法</h2><p>这里主要是用于操作MySQL和PostgreSQL（以下简称pg）为例，这两者对数据库的命令行操作有些许不同，具体如下：</p>
+<pre><code class="bash"># MySQL 选择/查看数据库或选择查看表结构
+$ use database_name;
+Database changed
+# 查看所有数据库
+$ show databases;
+# 查看指定数据库下的所有表
+$ show tables
+
+# 查看表结构
+$ desc table_name;
+
+######## 其他操作
+#查询数据库连接
+show full   processlist;
+show status like  &#39;%Max_used_connections%&#39;;
+show status like  &#39;%Threads_connected%&#39;;#当前连接数
+show status like  &#39;%table_lock%&#39;;#表锁定
+show status like  &#39;innodb_row_lock%&#39;;#行锁定
+show status like  &#39;%qcache%&#39;; #查询缓存情况
+show variables like  &quot;%query_cache%&quot;;
+SHOW STATUS LIKE  &#39;Qcache%&#39;;
+show variables like  &quot;%binlog%&quot;;
+show status like  &#39;Aborted_clients&#39;;#由于客户没有正确关闭连接已经死掉，已经放弃的连接数量
+show variables like  &#39;%max_connections%&#39;;//查看最大连接数量
+show variables like  &#39;%timeout%&#39;;#查看超时时间
+show variables like  &#39;log_%&#39;; #查看日志是否启动
+#####################################################
+# pg查看所有数据库
+$ \l  
+# 要查看更多关于数据库的信息，请使用 \l+ 命令
+$ \l+  
+# \l+ 的输出比 \l 多了 Size, Tablespace 和 Description 列
+# 连接数据库：
+$ \c 数据库名
+
+# 查询表名称
+$ \dt 
+
+# 用sql语句方式查询：
+$ SELECT tablename FROM pg_tables;  
+
+# 查看表结构
+$ \d tablename
 </code></pre>
-<p><img src="/./statics/cors01.png" alt="avatar"></p>
-<h3 id="同源策略-same-orign-policy-："><a href="#同源策略-same-orign-policy-：" class="headerlink" title="同源策略(same-orign policy)："></a>同源策略(same-orign policy)：</h3><pre><code>同源策略是一种约定，它是浏览器核心也最基本的安全功能，它会阻止一个域的js脚本和另外一个域的内容进行交互，如果缺少了同源策略，浏览器很容易受到XSS、CSRF等攻击。
-所谓同源（即在同一个域）就是两个页面具有相同的协议（protocol）、主机（host）和端口号（port）。
-</code></pre>
-<h3 id="跨域资源共享-Cross-origin-resource-sharing-："><a href="#跨域资源共享-Cross-origin-resource-sharing-：" class="headerlink" title="跨域资源共享(Cross-origin resource sharing)："></a>跨域资源共享(Cross-origin resource sharing)：</h3><pre><code>用于让网页的受限资源能够被其他域名的页面访问的一种机制。通过该机制，页面能够自由地使用不同源（英语：cross-origin）的图片、样式、脚本、iframes以及视频。[2]一些跨域的请求（特别是Ajax）常常会被同源策略（英语：Same-origin policy）所禁止的。跨源资源共享定义了一种方式，为的是浏览器和服务器之间能互相确认是否足够安全以至于能使用跨源请求（英语：cross-origin requests）。比起纯粹的同源请求，这将更为自由和功能性的（functionality），但比纯粹的跨源请求更为安全。
-</code></pre>
-<p>跨域资源共享是一份浏览器技术的规范，提供了 Web 服务从不同网域传来沙盒脚本的方法，以避开浏览器的同源策略[4]。</p>
-<h2 id="解决跨域的常用方法"><a href="#解决跨域的常用方法" class="headerlink" title="解决跨域的常用方法"></a>解决跨域的常用方法</h2><ol>
-<li><p>代理：<br> 一般有前端实现，<br> 原理是利用同源策略只会作用于浏览器-服务之间，而不限制服务-服务的通信。所以我们可以通过像nginx这种代理工具或者是自己在前端写个代理将请求放在同源环境下处理。</p>
-<p> 正向代理：a不能直接访问b，但中间有个服务器c，c转发a的请求给b，b再把资源给c，c再给a;（作用：解决访问限制，提供安全保障）<br> 反向代理：a不能直接访问b，但a可以访问c，c可以从b拿到a需要的资源,代理b处理a的请求，那么a访问c拿到b的资源，这个就是反向代理，a始终不知道c的资源是从哪来的，也不知道b的存在。(作用：负载均衡，提高访问速度，提供安全保障)</p>
-</li>
-<li><p>CORS:<br> 前端和后端均可实现，<br> 本质上是服务端的响应头添加一些跨域配置信息：<br> Access-Control-Allow-Credentials: true,<br> Access-Control-Allow-Origin: *,<br> Access-Control-Allow-Headers: ‘header’,<br> Access-Control-Expose-Headers: ‘serve-header’,<br> Access-Control-Allow-Methods: ‘methods’,<br> Access-Control-Max-Age: ‘1800’, &#x2F;&#x2F; 30min &#x3D; 1800s<br> 这一步在很多后端框架的三方库中已实现自动处理了，所以用后端处理CORS直接用三方库即可</p>
-</li>
-<li><p>nginx跨域和cors区别:<br> Nginx是间接跨域，而CORS则实现了直接跨域。Nginx的反向代理“欺诈了”浏览器，所以浏览器和服务器都认为是同源访问，所以Session不会丢失。（PS：如果发生跨域访问，服务器会每次都创建新的Session，所以才造成了前后端分离的Session丢失问题。） 至于CORS这种跨域机制的安全性和灵活性更高，但需要自己解决跨域访问Session丢失的问题，通常情况可以采用Session+Redis来实现Session共享。）</p>
-</li>
-</ol>
-<h2 id="项目实践"><a href="#项目实践" class="headerlink" title="项目实践"></a>项目实践</h2><p>以oceanus platform项目为例，该项目是以flask作为后端框架，以react作为前端，<br>按照以上所述，在本项目中采用的是使用第三方库flask-cors实现，将flask-cors导入后，一旦有跨域的请求，服务端响应就会自动添加一些附加的头信息，有时还会多出一次附加的请求，</p>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ol>
-<li><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2016/04/cors.html">http://www.ruanyifeng.com/blog/2016/04/cors.html</a></li>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS</a></li>
-<li>解决跨域的10种方案：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000022398875">https://segmentfault.com/a/1190000022398875</a></li>
-</ol>
+<p><strong>注意⚠️：</strong>SQL语法不区分大小写<br>一些最重要的 SQL 命令<br>SELECT - 从数据库中提取数据<br>UPDATE - 更新数据库中的数据<br>DELETE - 从数据库中删除数据<br>INSERT INTO - 向数据库中插入新数据<br>CREATE DATABASE - 创建新数据库<br>ALTER DATABASE - 修改数据库<br>CREATE TABLE - 创建新表<br>ALTER TABLE - 变更（改变）数据库表<br>DROP TABLE - 删除表<br>CREATE INDEX - 创建索引（搜索键）<br>DROP INDEX - 删除索引 </p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>

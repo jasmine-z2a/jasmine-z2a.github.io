@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CORS相关 | JT blog</title>
-  <meta name="keywords" content=" Tools ">
-  <meta name="description" content="CORS相关 | JT blog">
+  <title>python basic | JT blog</title>
+  <meta name="keywords" content=" python ">
+  <meta name="description" content="python basic | JT blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
@@ -631,9 +631,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-CORS" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-python-basic" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">CORS相关</h1>
+        <h1 class="article-title">python basic</h1>
     
     <div class="article-meta">
         
@@ -643,7 +643,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="CS基础">CS基础</a>
+            <a  data-rel="python">python</a>
             
         </span>
         
@@ -651,14 +651,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color1">Tools</a>
+            <a class="color2">python</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-14 18:21:57'>2023-08-06 15:47</time>
+            发布时间 : <time class="date" title='最后更新: 2023-12-30 22:14:52'>2023-12-14 19:06</time>
         
     </div>
     <div class="article-meta">
@@ -680,7 +680,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B7%A8%E6%BA%90%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB%EF%BC%88CORS%EF%BC%89"><span class="toc-text">跨源资源共享（CORS）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%EF%BC%9A"><span class="toc-text">名词解释：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F-cross-orgin-%EF%BC%9A"><span class="toc-text">跨域(cross-orgin)：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5-same-orign-policy-%EF%BC%9A"><span class="toc-text">同源策略(same-orign policy)：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB-Cross-origin-resource-sharing-%EF%BC%9A"><span class="toc-text">跨域资源共享(Cross-origin resource sharing)：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">解决跨域的常用方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5"><span class="toc-text">项目实践</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-text">链接</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-text">基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B%EF%BC%9A"><span class="toc-text">运行过程：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%EF%BC%9A"><span class="toc-text">按数据类型分：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E3%80%81%E5%85%83%E7%BB%84-tuple-%E3%80%81%E5%AD%97%E5%85%B8%E3%80%81%E9%9B%86%E5%90%88%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">列表、元组(tuple)、字典、集合、字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%EF%BC%9A"><span class="toc-text">运算：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%87%E7%89%87"><span class="toc-text">字符串切片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%92%8C%E5%BC%95%E7%94%A8"><span class="toc-text">变量和引用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E6%97%B6%E6%B3%A8%E6%84%8F"><span class="toc-text">函数参数传递时注意:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#args%EF%BC%8C-kwargs-%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-text">*args， **kwargs 参数传递</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E8%87%AA%E7%9C%81%E5%B1%9E%E6%80%A7%EF%BC%9A"><span class="toc-text">常见自省属性：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85"><span class="toc-text">封装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF"><span class="toc-text">继承</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E7%BB%A7%E6%89%BF"><span class="toc-text">多继承</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-text">多态</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85"><span class="toc-text">模块，包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95"><span class="toc-text">静态方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E4%BB%A5%E5%8F%8A-new-%E6%96%B9%E6%B3%95"><span class="toc-text">单例模式以及__new__方法</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -696,30 +696,180 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="跨源资源共享（CORS）"><a href="#跨源资源共享（CORS）" class="headerlink" title="跨源资源共享（CORS）"></a>跨源资源共享（CORS）</h1><h2 id="名词解释："><a href="#名词解释：" class="headerlink" title="名词解释："></a>名词解释：</h2><h3 id="跨域-cross-orgin-："><a href="#跨域-cross-orgin-：" class="headerlink" title="跨域(cross-orgin)："></a>跨域(cross-orgin)：</h3><pre><code>一个url是由：协议、域名、端口 三部分组成,当一个网页向另一个网页发起请求时，请求的url的协议、域名、端口三者之间的任意一个与当前页面url不同即为跨域
+        <h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><p>python： 一种面向对象的解释型语言，三方库丰富，能很好的跨平台性。<br>解释型语言：不需要进行预编译，执行一句编译一句，所以速度会比编译型语言慢一些；<br>编译型语言：在执行前会有个编译环境，编译成计算机能快速识别的机器语言（二进制文件）。运行时直接执行该二进制文件即可，比如c，c++，对编译器和环境都有依赖。  </p>
+<h2 id="运行过程："><a href="#运行过程：" class="headerlink" title="运行过程："></a>运行过程：</h2><p>运行之前代码时存在硬盘中，在运行时，cpu会将程序复制到内存，cpu再执行内存中的程序代码。 </p>
+<h2 id="按数据类型分："><a href="#按数据类型分：" class="headerlink" title="按数据类型分："></a>按数据类型分：</h2><p>(1)数字型 : 整形、浮点型、布尔型、复数型。<br>(2)非数字型: 字符串、列表、元组、字典。type(变量名)查看变量类型；  </p>
+<h2 id="列表、元组-tuple-、字典、集合、字符串"><a href="#列表、元组-tuple-、字典、集合、字符串" class="headerlink" title="列表、元组(tuple)、字典、集合、字符串"></a>列表、元组(tuple)、字典、集合、字符串</h2><p>元组和列表可以相互转换 : ①使用list(元组)将元组转换成列表；②使用tuple将列表转换成元组；<br>字典: ① 键必须是唯一的 ②值可以取任意类型，但是键只能使用字符串、数字或者元组(键只能是不可变类型)。<br>** 遍历字典的时候for k in dict 中的k是键，而不是值。（普通的for），不过也可以通过items()方法遍历键值对: **</p>
+<p>字符串中的转义字符：\n表示换行，而\r表示回车，字符串中的函数isspace()判断的时候\t\n\r都是表示的空白字符；<br>isdecimla()、isdigit()、isnumeric()都不能判断字符串中的小数，(可以判断字符串中的整数)；<br>集合set的使用: 可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。 集合还有一些方法add()、update()、pop()等；</p>
+<h2 id="运算："><a href="#运算：" class="headerlink" title="运算："></a>运算：</h2><p>a&#x2F;&#x2F;b表示取结果的整数，乘方使用**<br>逻辑运算符:and、or、not，成员运算符in、not in，身份运算符is、is not；</p>
+<p>\t(制表符(对齐))和\n转义字符</p>
+<h2 id="字符串切片"><a href="#字符串切片" class="headerlink" title="字符串切片"></a>字符串切片</h2><p>①类似截取，但是可以指定步长；②python中支持倒序索引</p>
+<h2 id="变量和引用"><a href="#变量和引用" class="headerlink" title="变量和引用"></a>变量和引用</h2><p>变量和数据都是保存在内存中的；<br>在python中函数的参数传递以及返回值都是引用传递的；<br>变量和数据是分开存储的；<br>变量中记录数据的地址，就叫做引用；<br>使用id()函数可以查看变量中保存的数据所在的内存地址；<br>注意: 如果变量已经被定义，当给一个变量复制的时候，本质上是修改了数据的引用。① 变量不再对之前的数据引用；②变量改为对新复制的数据引用；<br>可变类型和不可变类型  </p>
+<blockquote>
+<p>不可变类型: 内存中的数据不允许修改:</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>① 数字类型: int、bool、 float、complex、long ② 字符串 :str ③ 元组 :tuple</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>可变类型: 内存中的数据可以被修改</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>① 列表 list ② 字典 dict</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>可变类型：变量赋值 a&#x3D;5 后再赋值 a&#x3D;10，这里实际是新生成一个 int 值对象 10，再让 a 指向它，而 5 被丢弃，不是改变a的值，相当于新生成了a；<br>不可变类型: 变量赋值 la&#x3D;[1,2,3,4] 后再赋值 la[2]&#x3D;5 则是将 list la 的第三个元素值更改，本身la没有动，只是其内部的一部分值被修改了。</p>
+</blockquote>
+<h3 id="函数参数传递时注意"><a href="#函数参数传递时注意" class="headerlink" title="函数参数传递时注意:"></a>函数参数传递时注意:</h3><blockquote>
+<p>不可变类型：类似 c++ 的值传递，如 整数、字符串、元组。如fun（a），传递的只是a的值，没有影响a对象本身。比如在 fun（a）内部修改 a 的值，只是修改另一个复制的对象，不会影响 a 本身。<br>可变类型：类似 c++ 的引用传递，如 列表，字典。如 fun（la），则是将 la 真正的传过去，修改后fun外部的la也会受影响；<br>返回值：<br>函数如果返回的是一个元组就可以省略括号；<br>return a,b<br>如果返回的是一个元组，可以使用多个变量直接接收函数的返回结果；(注意变量的个数和返回的元组的个数相同)<br>交换变量的方式：  </p>
+</blockquote>
+<pre><code>方法一：
+c = a
+a = b
+b = c
+方法二：
+a = a + b
+b = a - b
+a = a - b
+方法三：
+a, b = b, a
 </code></pre>
-<p><img src="/./statics/cors01.png" alt="avatar"></p>
-<h3 id="同源策略-same-orign-policy-："><a href="#同源策略-same-orign-policy-：" class="headerlink" title="同源策略(same-orign policy)："></a>同源策略(same-orign policy)：</h3><pre><code>同源策略是一种约定，它是浏览器核心也最基本的安全功能，它会阻止一个域的js脚本和另外一个域的内容进行交互，如果缺少了同源策略，浏览器很容易受到XSS、CSRF等攻击。
-所谓同源（即在同一个域）就是两个页面具有相同的协议（protocol）、主机（host）和端口号（port）。
-</code></pre>
-<h3 id="跨域资源共享-Cross-origin-resource-sharing-："><a href="#跨域资源共享-Cross-origin-resource-sharing-：" class="headerlink" title="跨域资源共享(Cross-origin resource sharing)："></a>跨域资源共享(Cross-origin resource sharing)：</h3><pre><code>用于让网页的受限资源能够被其他域名的页面访问的一种机制。通过该机制，页面能够自由地使用不同源（英语：cross-origin）的图片、样式、脚本、iframes以及视频。[2]一些跨域的请求（特别是Ajax）常常会被同源策略（英语：Same-origin policy）所禁止的。跨源资源共享定义了一种方式，为的是浏览器和服务器之间能互相确认是否足够安全以至于能使用跨源请求（英语：cross-origin requests）。比起纯粹的同源请求，这将更为自由和功能性的（functionality），但比纯粹的跨源请求更为安全。
-</code></pre>
-<p>跨域资源共享是一份浏览器技术的规范，提供了 Web 服务从不同网域传来沙盒脚本的方法，以避开浏览器的同源策略[4]。</p>
-<h2 id="解决跨域的常用方法"><a href="#解决跨域的常用方法" class="headerlink" title="解决跨域的常用方法"></a>解决跨域的常用方法</h2><ol>
-<li><p>代理：<br> 一般有前端实现，<br> 原理是利用同源策略只会作用于浏览器-服务之间，而不限制服务-服务的通信。所以我们可以通过像nginx这种代理工具或者是自己在前端写个代理将请求放在同源环境下处理。</p>
-<p> 正向代理：a不能直接访问b，但中间有个服务器c，c转发a的请求给b，b再把资源给c，c再给a;（作用：解决访问限制，提供安全保障）<br> 反向代理：a不能直接访问b，但a可以访问c，c可以从b拿到a需要的资源,代理b处理a的请求，那么a访问c拿到b的资源，这个就是反向代理，a始终不知道c的资源是从哪来的，也不知道b的存在。(作用：负载均衡，提高访问速度，提供安全保障)</p>
-</li>
-<li><p>CORS:<br> 前端和后端均可实现，<br> 本质上是服务端的响应头添加一些跨域配置信息：<br> Access-Control-Allow-Credentials: true,<br> Access-Control-Allow-Origin: *,<br> Access-Control-Allow-Headers: ‘header’,<br> Access-Control-Expose-Headers: ‘serve-header’,<br> Access-Control-Allow-Methods: ‘methods’,<br> Access-Control-Max-Age: ‘1800’, &#x2F;&#x2F; 30min &#x3D; 1800s<br> 这一步在很多后端框架的三方库中已实现自动处理了，所以用后端处理CORS直接用三方库即可</p>
-</li>
-<li><p>nginx跨域和cors区别:<br> Nginx是间接跨域，而CORS则实现了直接跨域。Nginx的反向代理“欺诈了”浏览器，所以浏览器和服务器都认为是同源访问，所以Session不会丢失。（PS：如果发生跨域访问，服务器会每次都创建新的Session，所以才造成了前后端分离的Session丢失问题。） 至于CORS这种跨域机制的安全性和灵活性更高，但需要自己解决跨域访问Session丢失的问题，通常情况可以采用Session+Redis来实现Session共享。）</p>
-</li>
+<p>如果在函数中使用赋值语句，并不会影响调用函数时传递的实参变量；无论传递的参数可变还是不可变；<br>只要针对参数使用赋值语句，会在函数内部修改局部变量的引用，不会影响到外部变量的引用；  </p>
+<h3 id="args，-kwargs-参数传递"><a href="#args，-kwargs-参数传递" class="headerlink" title="*args， **kwargs 参数传递"></a>*args， **kwargs 参数传递</h3><p>其中的<em>的作用是用来拆包的<br>一个</em>后面接元组变量<br>两个*后面接字典变量<br>同样传递参数的时候可以：<br>args &#x3D; (a,b,c)<br>kwargs &#x3D; {a:1, b:2, c:3}<br>demo(*args,**kwargs)  </p>
+<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>类：①特征被称为属性；②行为被称为方法；③三要素:类名、属性、方法；<br>类的<br><img src="/../images/class_attr.png" alt="avatar"><br>dir()函数可以查看对象的所有方法，这是python的自省(introspection)属性</p>
+<blockquote>
+<p>“自省”（introspection）是指一个程序能够在运行时检查对象的类型或者属性的能力，   </p>
+</blockquote>
+<h3 id="常见自省属性："><a href="#常见自省属性：" class="headerlink" title="常见自省属性："></a>常见自省属性：</h3><ol>
+<li>type() 函数：返回对象的类型。</li>
+<li>dir() 函数：返回对象的所有属性和方法的列表。</li>
+<li>help() 函数：提供对象的帮助信息，包括文档字符串。</li>
+<li><strong>doc</strong> 属性： 对象的文档字符串。</li>
+<li>inspect 模块： 提供更高级的自省工具，允许检查源代码、获取类的继承关系等。</li>
 </ol>
-<h2 id="项目实践"><a href="#项目实践" class="headerlink" title="项目实践"></a>项目实践</h2><p>以oceanus platform项目为例，该项目是以flask作为后端框架，以react作为前端，<br>按照以上所述，在本项目中采用的是使用第三方库flask-cors实现，将flask-cors导入后，一旦有跨域的请求，服务端响应就会自动添加一些附加的头信息，有时还会多出一次附加的请求，</p>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ol>
-<li><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2016/04/cors.html">http://www.ruanyifeng.com/blog/2016/04/cors.html</a></li>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS</a></li>
-<li>解决跨域的10种方案：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000022398875">https://segmentfault.com/a/1190000022398875</a></li>
+<pre><code class="python">import inspect
+
+def example_function():
+    pass
+
+print(inspect.getsource(example_function))
+</code></pre>
+<ol start="6">
+<li>hasattr() 函数： 检查对象是否有某个属性。</li>
 </ol>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>有属性和私有方法: 只需要在属性名或者方法名前面加上两个下划线，私有属性只能在类的内部使用；<br>但是Python中没有真正意义的私有，这个私有只是伪私有。可以使用_类名__属性或者_类名__方法强制访问私有属性或方法；</p>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>关于继承中的重写，和Java中差不多，直接覆盖即可</p>
+<ul>
+<li>注意，使用多继承的时候，如果两个父类中有相同的方法，尽量避免使用多继承， 避免产生混淆。可以使用__mro__(方法搜索顺序)用于在多继承时，判断方法、属性的调用路径；<br>关于继承中的重写，和Java中差不多，直接覆盖即可；<br>扩展相关方法中使用super()关键字，和Java也差不多；<br>注意子类不能访问父类的私有属性;<br>但是子类可以通过公有方法间接的来访问父类的私有属性；</li>
+</ul>
+<pre><code class="python">class A:
+    def __init__(self):
+        self.__num2 = 33
+
+    def __test(self):
+        print(&quot;__num2 = %d&quot; % self.__num2)
+
+    def test(self):
+        # 访问自己类的 私有属性
+        print(&quot;私有属性__num2 = %d&quot; % self.__num2)
+        # 访问自己类的 私有方法
+        self.__test()
+
+
+class B(A):
+    def demo(self):
+        self.test()  # 通过访问公共方法 test来间接访问 私有属性
+
+b = B()
+b.demo()  # 报错
+</code></pre>
+<h4 id="多继承"><a href="#多继承" class="headerlink" title="多继承"></a>多继承</h4><p>注意，使用多继承的时候，如果两个父类中有相同的方法，尽量避免使用多继承， 避免产生混淆。可以使用__mro__(方法搜索顺序)用于在多继承时，判断方法、属性的调用路径；</p>
+<pre><code class="python">class A:
+    def test1(self):
+        print(&quot;A类中的test_1方法!&quot;)
+
+    def test2(self):
+        print(&quot;A类中的test_2方法!&quot;)
+
+
+class B:
+    def test1(self):
+        print(&quot;B类中的test_1方法!&quot;)
+
+    def test2(self):
+        print(&quot;B类中的test_2方法!&quot;)
+
+
+class C(A, B):
+    pass
+
+c = C()
+c.test1()
+c.test2()
+print(C.__mro__)  # 输出C的继承路径
+</code></pre>
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><ul>
+<li><p>使用类名()创建对象，创建对象的动作分两步:</p>
+<blockquote>
+<p>①在内存中为对象分配空间；<br>②调用初始化方法__init__为对象初始化；</p>
+</blockquote>
+</li>
+<li><p>类也是一个特殊的对象<br>class AAA ： 定义的类，属于类对象<br>obj &#x3D; AAA() 实例化的类对象，为实例对象；<br>一个类对象，可以创建多个实例对象，除了封装实例的属性__init__. 和方法 func(self) 外，<br>类对象还可以拥有自己的属性和方法： 1.类属性 ，2.类方法(cls), 通过类名.方式</p>
+</li>
+</ul>
+<p>三种方法(静态方法、类方法、实例方法)的综合使用(注意: 如果既要访问类属性，又要访问实例属性，就定义实例方法)</p>
+<p>属性的获取机制</p>
+<h2 id="模块，包"><a href="#模块，包" class="headerlink" title="模块，包"></a>模块，包</h2><h3 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h3><ul>
+<li><p>在开发时，如果需要在类中封装一个方法，这个方法：</p>
+</li>
+<li><p>既不需要访问实例属性或者调用实例方法</p>
+</li>
+<li><p>也不需要访问类属性或者调用类方法</p>
+</li>
+</ul>
+<pre><code class="python">@staticmethod
+def demo():
+    pass
+</code></pre>
+<ul>
+<li><p>静态方法需要用修饰器@staticmethod来标识，告诉解释器这是一个静态方法</p>
+</li>
+<li><p>通过**类名.**调用静态方法</p>
+</li>
+<li><p>三种方法(静态方法、类方法、实例方法)的综合使用(注意: 如果既要访问类属性，又要访问实例属性，就定义实例方法)；</p>
+</li>
+</ul>
+<h2 id="单例模式以及-new-方法"><a href="#单例模式以及-new-方法" class="headerlink" title="单例模式以及__new__方法"></a>单例模式以及__new__方法</h2><p>__new__方法</p>
+<ul>
+<li>使用类名()创建对象时，python的解释器首先会调用__new__方法为对象分配空间</li>
+<li>__new__是一个由object基类提供的内置的静态方法，主要作用有两个</li>
+</ul>
+<ol>
+<li>在内存中为对象分配空间</li>
+<li>放回对象的引用</li>
+</ol>
+<ul>
+<li>python 的解释器获得对象的引用后， 将引用作为第一个参数，传递给 <strong>init</strong> 方法</li>
+</ul>
+<pre><code class="python">class MusicPlayer:
+    def __new__(cls, *args, **kwargs):  # 重写父类的__new__方法，必须返回
+        print(&quot;创建对象，分配空间&quot;)
+        # 为对象分配空间
+        instance = super().__new__(cls)  # 因为__new__方法是一个静态方法，所以要传递cls关键字 (如果是类方法就不需要)
+        # 一定要返回，不然就不能分配空间，创建的对象就为None
+        return instance
+
+    def __init__(self):
+        print(&quot;播放器初始化&quot;)
+
+player = MusicPlayer()
+print(player)
+</code></pre>
+<p>上面的单例模式虽然__new__方法只会执行一次，但是__init__还是会执行多次，如何只让初始化只执行一次呢，可以定义一个类变量记录；</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>
