@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(18)</small>
+                <small>(19)</small>
             
         </div>
     </li>
@@ -346,7 +346,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="18">
+<input type="hidden" id="yelog_site_posts_number" value="19">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -450,6 +450,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/Linux%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%94%A8%E7%89%88"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Linux命令实用版">Linux命令实用版</span>
+            <span class="post-date" title="2024-01-08 11:09:10">2024/01/08</span>
+        </a>
         
         
         <a  class="全部文章 数据库 中间件 "
@@ -662,7 +671,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-02 21:01:31'>2024-01-01 00:41</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-05 00:39:35'>2024-01-01 00:41</time>
         
     </div>
     <div class="article-meta">
@@ -684,7 +693,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E7%B1%BB"><span class="toc-text">数据库分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93-NoSQL"><span class="toc-text">非关系型数据库(NoSQL)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-text">数据库管理系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1"><span class="toc-text">数据库事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSQL"><span class="toc-text">什么是SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RDBMS"><span class="toc-text">RDBMS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%AF%AD%E6%B3%95"><span class="toc-text">SQL语法</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E7%B1%BB"><span class="toc-text">数据库分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93-NoSQL"><span class="toc-text">非关系型数据库(NoSQL)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-text">数据库管理系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1"><span class="toc-text">数据库事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSQL"><span class="toc-text">什么是SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RDBMS"><span class="toc-text">RDBMS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%AF%AD%E6%B3%95"><span class="toc-text">SQL语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8SQL%E5%91%BD%E4%BB%A4"><span class="toc-text">常用SQL命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="toc-text">数据库操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E6%93%8D%E4%BD%9C"><span class="toc-text">表格操作</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -752,6 +761,129 @@ $ SELECT tablename FROM pg_tables;
 
 # 查看表结构
 $ \d tablename
+</code></pre>
+<h2 id="常用SQL命令"><a href="#常用SQL命令" class="headerlink" title="常用SQL命令"></a>常用SQL命令</h2><h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><ol>
+<li>创建数据库</li>
+</ol>
+<pre><code class="bash">### 创建数据库  在命令窗口中执行，记得以；结尾来结束命令
+CREATE DATABASE dbname;
+
+###创建时，指定字符集和排序规则：
+CREATE DATABASE mydatabase
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_general_ci;
+
+
+### 避免数据库已存在报错
+CREATE DATABASE IF NOT EXISTS mydatabase;
+
+### createdb 是一个 SQL 命令 CREATE DATABASE 的封装。 
+createdb [option...] [dbname [description]]
+dbname：要创建的数据库名。
+description：关于新创建的数据库相关的说明。
+options：参数可选项
+</code></pre>
+<ol start="2">
+<li>删除数据库</li>
+</ol>
+<pre><code class="bash">DROP DATABASE [ IF EXISTS ] name
+</code></pre>
+<h3 id="表格操作"><a href="#表格操作" class="headerlink" title="表格操作"></a>表格操作</h3><ol>
+<li>创建表<blockquote>
+<p>字段不为空可以设置字段的属性为 NOT NULL，<br>AUTO_INCREMENT 定义列为自增的属性，一般用于主键，数值会自动加 1。<br>PRIMARY KEY 关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号 , 分隔。<br>ENGINE 设置存储引擎，CHARSET 设置编码。</p>
+</blockquote>
+</li>
+</ol>
+<pre><code class="bash">CREATE TABLE table_name(
+   column1 datatype,
+   column2 datatype,
+   column3 datatype,
+   .....
+   columnN datatype,
+   PRIMARY KEY( 一个或多个列 )
+);
+</code></pre>
+<ol start="2">
+<li>删除表</li>
+</ol>
+<pre><code class="bash">drop table table_name
+DROP TABLE [IF EXISTS] table_name;
+</code></pre>
+<ol start="3">
+<li>插入数据</li>
+</ol>
+<pre><code class="bash"># 插入指定字段，注意字段顺序的对应
+INSERT INTO TABLE_NAME (column1, column2, column3,...columnN)
+VALUES (value1, value2, value3,...valueN);
+
+# 插入所有字段，注意顺序的对应
+INSERT INTO TABLE_NAME VALUES (value1,value2,value3,...valueN);
+</code></pre>
+<ol start="4">
+<li>查询数据</li>
+</ol>
+<pre><code class="bash"># 查询指定字段
+SELECT column1, column2,...columnN FROM table_name;
+
+# 查询所有数据
+SELECT * FROM table_name;
+</code></pre>
+<ol start="5">
+<li>表达式<br>表达式是由一个或多个的值、运算符、SQL函数组成的。</li>
+</ol>
+<pre><code class="bash">SELECT column1, column2, columnN
+FROM table_name
+WHERE [CONDITION | EXPRESSION];
+
+# 布尔表达式: 根据一个指定条件来读取数据
+SELECT column1, column2, columnN
+FROM table_name
+WHERE SINGLE VALUE MATCHTING EXPRESSION;
+
+# 数字表达式:常用于查询语句中的数学运算：
+SELECT numerical_expression as  OPERATION_NAME
+[FROM table_name WHERE CONDITION] ;
+
+# SQL内置函数
+avg() ： 返回一个表达式的平均值
+sum() ： 返回指定字段的总和
+count() ： 返回查询的记录总数
+min()
+max()
+
+SELECT COUNT(*) AS &quot;RECORDS&quot; FROM COMPANY;
+
+# 日期表达式：返回当前系统的日期和时间，可用于各种数据操作，以下实例查询当前时间
+
+SELECT CURRENT_TIMESTAMP;
+</code></pre>
+<ol start="6">
+<li>SQL WHERE子句<br>我们可以在 WHERE 子句中使用比较运算符或逻辑运算符，例如 &gt;, &lt;, &#x3D;, LIKE, NOT 等</li>
+</ol>
+<pre><code class="bash">SELECT column1, column2, columnN
+FROM table_name
+WHERE [condition1]
+
+# example 
+SELECT * FROM COMPANY WHERE AGE &gt;= 25 AND SALARY &gt;= 65000;
+SELECT * FROM COMPANY WHERE NAME LIKE &#39;Pa%&#39;;
+SELECT * FROM COMPANY WHERE AGE IN ( 25, 27 );
+SELECT * FROM COMPANY WHERE AGE BETWEEN 25 AND 27;
+##############
+# 子查询
+
+SELECT AGE FROM COMPANY
+        WHERE EXISTS (SELECT AGE FROM COMPANY WHERE SALARY &gt; 65000);
+
+SELECT * FROM COMPANY
+        WHERE AGE &gt; (SELECT AGE FROM COMPANY WHERE SALARY &gt; 65000);
+</code></pre>
+<ol start="7">
+<li>更新表</li>
+</ol>
+<pre><code class="bash">UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
 </code></pre>
 <p><strong>注意⚠️：</strong>SQL语法不区分大小写<br>一些最重要的 SQL 命令<br>SELECT - 从数据库中提取数据<br>UPDATE - 更新数据库中的数据<br>DELETE - 从数据库中删除数据<br>INSERT INTO - 向数据库中插入新数据<br>CREATE DATABASE - 创建新数据库<br>ALTER DATABASE - 修改数据库<br>CREATE TABLE - 创建新表<br>ALTER TABLE - 变更（改变）数据库表<br>DROP TABLE - 删除表<br>CREATE INDEX - 创建索引（搜索键）<br>DROP INDEX - 删除索引 </p>
 
