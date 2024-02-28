@@ -2,15 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>数据库相关 | JT blog</title>
+  <title>数据库相关 | J de blog</title>
   <meta name="keywords" content=" 数据库 , SQL ">
-  <meta name="description" content="数据库相关 | JT blog">
+  <meta name="description" content="数据库相关 | J de blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://jasmine-z2a.github.io/about/index.html">
-<meta property="og:site_name" content="JT blog">
+<meta property="og:site_name" content="J de blog">
 <meta property="og:description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-04T10:45:19.000Z">
@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(19)</small>
+                <small>(20)</small>
             
         </div>
     </li>
@@ -280,6 +280,21 @@
             
                 
     <li>
+        <div data-rel="docker">
+            
+            docker
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
         <div data-rel="me">
             
             me
@@ -346,7 +361,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="19">
+<input type="hidden" id="yelog_site_posts_number" value="20">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -409,6 +424,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>flask</a>
             </li>
         
@@ -450,6 +469,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 docker "
+           href="/%E4%BC%9A%E4%B8%80%E7%82%B9docker"
+           data-tag="docker"
+           data-author="" >
+            <span class="post-title" title="会一点docker">会一点docker</span>
+            <span class="post-date" title="2024-02-02 13:29:48">2024/02/02</span>
+        </a>
         
         
         <a  class="全部文章 "
@@ -671,7 +699,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-05 00:39:35'>2024-01-01 00:41</time>
+            发布时间 : <time class="date" title='最后更新: 2024-02-27 17:11:10'>2024-01-01 00:41</time>
         
     </div>
     <div class="article-meta">
@@ -693,7 +721,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E7%B1%BB"><span class="toc-text">数据库分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93-NoSQL"><span class="toc-text">非关系型数据库(NoSQL)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-text">数据库管理系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1"><span class="toc-text">数据库事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSQL"><span class="toc-text">什么是SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RDBMS"><span class="toc-text">RDBMS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%AF%AD%E6%B3%95"><span class="toc-text">SQL语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8SQL%E5%91%BD%E4%BB%A4"><span class="toc-text">常用SQL命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="toc-text">数据库操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E6%93%8D%E4%BD%9C"><span class="toc-text">表格操作</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%86%E7%B1%BB"><span class="toc-text">数据库分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93-NoSQL"><span class="toc-text">非关系型数据库(NoSQL)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-text">数据库管理系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1"><span class="toc-text">数据库事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSQL"><span class="toc-text">什么是SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RDBMS"><span class="toc-text">RDBMS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%AF%AD%E6%B3%95"><span class="toc-text">SQL语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8SQL%E5%91%BD%E4%BB%A4"><span class="toc-text">常用SQL命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="toc-text">数据库操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C"><span class="toc-text">表格基础操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SELECT-DISTINCT-%E8%AF%AD%E5%8F%A5%E7%94%A8%E4%BA%8E%E8%BF%94%E5%9B%9E%E5%94%AF%E4%B8%80%E4%B8%8D%E5%90%8C%E7%9A%84%E5%80%BC%E3%80%82%E4%B9%9F%E5%B0%B1%E6%98%AF%E5%8E%BB%E6%8E%89%E9%87%8D%E5%A4%8D%E5%80%BC"><span class="toc-text">SELECT DISTINCT 语句用于返回唯一不同的值。也就是去掉重复值</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -788,7 +816,7 @@ options：参数可选项
 </ol>
 <pre><code class="bash">DROP DATABASE [ IF EXISTS ] name
 </code></pre>
-<h3 id="表格操作"><a href="#表格操作" class="headerlink" title="表格操作"></a>表格操作</h3><ol>
+<h3 id="表格基础操作"><a href="#表格基础操作" class="headerlink" title="表格基础操作"></a>表格基础操作</h3><ol>
 <li>创建表<blockquote>
 <p>字段不为空可以设置字段的属性为 NOT NULL，<br>AUTO_INCREMENT 定义列为自增的属性，一般用于主键，数值会自动加 1。<br>PRIMARY KEY 关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号 , 分隔。<br>ENGINE 设置存储引擎，CHARSET 设置编码。</p>
 </blockquote>
@@ -884,6 +912,207 @@ SELECT * FROM COMPANY
 <pre><code class="bash">UPDATE table_name
 SET column1 = value1, column2 = value2...., columnN = valueN
 WHERE [condition];
+</code></pre>
+<ol start="8">
+<li>删除表</li>
+</ol>
+<pre><code class="bash"># 删除整张表
+DELETE FROM table_name;
+
+# 删除表的条件指定内容
+DELETE FROM table_name where $condition;
+</code></pre>
+<ol start="9">
+<li>SQL LIKE 子句<br>模糊匹配的两种通配符 % _：<br>如果你用过python的正则表达式的话，_就是类似*，匹配多个字符串，而%就类似于？只匹配一个字符串</li>
+</ol>
+<pre><code class="bash"># 注意！！！ 模糊匹配富符的位置可以_和%是可以混用的,如下所示：
+LIKE &#39;%XXX&#39;  #以XXX结尾
+LIKE &#39;XXX%&#39;  #以XXX开头
+LIKE &#39;%XXX%&#39; #字段中含有XXX 
+LIKE &#39;_XXX&#39;  #第二个字符开始为XXX的字段
+LIKE &#39;XXX_&#39;  #
+LIKE &#39;_XXX_&#39; 
+LIKE &#39;X__Y&#39; # 以 X 开头，Y 结尾
+LIKE &#39;%XXX_&#39;# 从第二个字符为X
+LIKE &#39;_XXX%&#39;# 倒数第四个字符到倒数第二个字符为X， 
+</code></pre>
+<ol start="10">
+<li>limit</li>
+</ol>
+<pre><code class="bash">SELECT * FROM TABLE_NAME LIMIT 4;
+### 和offset一起用
+SELECT * FROM TABLE_NAME LIMIT i OFFSET n;
+</code></pre>
+<ol start="11">
+<li>order by</li>
+</ol>
+<pre><code class="bash">SELECT * FROM COMPANY ORDER BY AGE ASC; # 升序
+SELECT * FROM COMPANY ORDER BY NAME DESC; # 降序
+</code></pre>
+<ol start="12">
+<li>group by<br>GROUP BY 子句必须放在 WHERE 子句中的条件之后，必须放在 ORDER BY 子句之前。</li>
+</ol>
+<pre><code class="bash">SELECT column-list
+FROM table_name
+WHERE [ conditions ]
+GROUP BY column1, column2....columnN
+ORDER BY column1, column2....columnN
+
+### example
+
+SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME;
+
+SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME ORDER BY NAME;
+
+SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME ORDER BY NAME DESC;
+</code></pre>
+<ol start="13">
+<li>with<br>WITH 子句有助于将复杂的大型查询分解为更简单的表单，便于阅读。这些语句通常称为通用表表达式（Common Table Express， CTE），也可以当做一个为查询而存在的临时表。<br>WITH 子句是在多次执行子查询时特别有用，允许我们在查询中通过它的名称(可能是多次)引用它。<br>WITH 子句在使用前必须先定义。<br>可以在 WITH 中使用数据 INSERT, UPDATE 或 DELETE 语句，允许您在同一个查询中执行多个不同的操作。</li>
+</ol>
+<pre><code class="bash">WITH
+   name_for_summary_data AS (
+      SELECT Statement)
+   SELECT columns
+   FROM name_for_summary_data
+   WHERE conditions &lt;=&gt; (
+      SELECT column
+      FROM name_for_summary_data)
+   [ORDER BY columns]
+</code></pre>
+<ol start="14">
+<li>having<br>HAVING 子句可以让我们筛选分组后的各组数据。<br>WHERE 子句在所选列上设置条件，而 HAVING 子句则在由 GROUP BY 子句创建的分组上设置条件。</li>
+</ol>
+<pre><code class="bash">### HAVING 子句必须放置于 GROUP BY 子句后面，ORDER BY 子句前面，下面是 HAVING 子句在 SELECT 语句中基础语法
+SELECT column1, column2
+FROM table1, table2
+WHERE [ conditions ]
+GROUP BY column1, column2
+HAVING [ conditions ]
+ORDER BY column1, column2
+
+# 表示按名字分组，
+select name from company group by name HAVING count(name) &lt; 2;
+</code></pre>
+<ol start="15">
+<li>distinct</li>
+</ol>
+<h1 id="SELECT-DISTINCT-语句用于返回唯一不同的值。也就是去掉重复值"><a href="#SELECT-DISTINCT-语句用于返回唯一不同的值。也就是去掉重复值" class="headerlink" title="SELECT DISTINCT 语句用于返回唯一不同的值。也就是去掉重复值"></a>SELECT DISTINCT 语句用于返回唯一不同的值。也就是去掉重复值</h1><pre><code class="bash">### 例子
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+</code></pre>
+<ol start="16">
+<li>约束 <blockquote>
+<p>NOT NULL：指示某列不能存储 NULL 值。<br>UNIQUE: 确保某列的值都是唯一的。<br>PRIMARY Key<br>FOREIGN Key： 保证一个表中的数据匹配另一个表中的值的参照完整性。<br>CHECK： 保证列中的值符合指定的条件。<br>EXCLUSION ：排他约束，保证如果将任何两行的指定列或表达式使用指定操作符进行比较，至少其中一个操作符比较将会返回 false 或空值。</p>
+</blockquote>
+</li>
+</ol>
+<pre><code class="bash">### 在创建表的时候添加约束
+CREATE TABLE COMPANY1(
+   ID INT PRIMARY KEY     NOT NULL,
+   NAME           TEXT    NOT NULL,
+   AGE            INT     NOT NULL UNIQUE,
+   ADDRESS        CHAR(50),
+   SALARY         REAL    CHECK(SALARY &gt; 0)
+   EXCLUDE USING gist
+   (NAME WITH =,  -- 如果满足 NAME 相同，AGE 不相同则不允许插入，否则允许插入
+   AGE WITH &lt;&gt;)   -- 其比较的结果是如果整个表达式返回 true，则不允许插入，否则允许
+);  
+### 删除约束
+ALTER TABLE table_name DROP CONSTRAINT some_name;
+</code></pre>
+<ol start="16">
+<li>连接JOIN<br>CROSS JOIN ：交叉连接, 取并集<br>INNER JOIN：内连接, 取交集<br>LEFT OUTER JOIN：左外连接， 交集+左表格<br>RIGHT OUTER JOIN：右外连接<br>FULL OUTER JOIN：全外连接</li>
+</ol>
+<pre><code class="bash">SELECT ... FROM table1 CROSS JOIN table2 ...
+
+SELECT table1.column1, table2.column2...
+FROM table1
+INNER JOIN table2
+ON table1.common_filed = table2.common_field;
+
+SELECT ... FROM table1 LEFT OUTER JOIN table2 ON conditional_expression ...
+
+SELECT ... FROM table1 RIGHT OUTER JOIN table2 ON conditional_expression ...
+
+SELECT ... FROM table1 FULL OUTER JOIN table2 ON conditional_expression ...
+</code></pre>
+<ol start="17">
+<li>UNION<br>合并两个或多个 SELECT 语句的结果<blockquote>
+<p>请注意，UNION 内部的每个 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每个 SELECT 语句中的列的顺序必须相同。</p>
+</blockquote>
+</li>
+</ol>
+<pre><code class="bash">SELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]
+
+UNION
+
+SELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]
+</code></pre>
+<ol start="18">
+<li>INDEX 索引<br>索引有助于加快 SELECT 查询和 WHERE 子句，但它会减慢使用 UPDATE 和 INSERT 语句时的数据输入。索引可以创建或删除，但不会影响数据。</li>
+</ol>
+<p>使用 CREATE INDEX 语句创建索引，它允许命名索引，指定表及要索引的一列或多列，并指示索引是升序排列还是降序排列。</p>
+<p>索引也可以是唯一的，与 UNIQUE 约束类似，在列上或列组合上防止重复条目。</p>
+<blockquote>
+<p>什么情况下要避免使用索引？<br>虽然索引的目的在于提高数据库的性能，但这里有几个情况需要避免使用索引。<br>使用索引时，需要考虑下列准则：<br>a.索引不应该使用在较小的表上。<br>b.索引不应该使用在有频繁的大批量的更新或插入操作的表上。<br>c.索引不应该使用在含有大量的 NULL 值的列上。<br>d.索引不应该使用在频繁操作的列上.  </p>
+</blockquote>
+<pre><code class="bash"># 用法
+CREATE INDEX index_name ON table_name;
+# 索引类型
+# 单列索引
+CREATE INDEX index_name ON table_name (column_name);
+# 组合索引，基于表的多列上创建的索引
+CREATE INDEX index_name ON table_name (column1_name, column2_name);
+# 不管是单列索引还是组合索引，该索引必须是在 WHERE 子句的过滤条件中使用非常频繁的列。如果只有一列被使用到，就选择单列索引，如果有多列就使用组合索引。
+
+# 唯一索引
+# 使用唯一索引不仅是为了性能，同时也为了数据的完整性。唯一索引不允许任何重复的值插入到表中
+CREATE UNIQUE INDEX index_name on table_name (column_name);
+
+# 局部索引
+# 局部索引 是在表的子集上构建的索引；子集由一个条件表达式上定义。索引只包含满足条件的行。基础语法如下
+CREATE INDEX index_name on table_name (conditional_expression);
+
+# 隐式索引 是在创建对象时，由数据库服务器自动创建的索引。索引自动创建为主键约束和唯一约束。
+pg 用 \d company 命令列出 COMPANY 表的所有索引，company_pkey 是隐式索引 ，是表创建表时创建的
+使用 \di 命令列出数据库中所有索引
+# 删除索引
+drop index index_name;
+</code></pre>
+<ol start="19">
+<li>ALTER TABLE<br>ALTER TABLE 命令用于添加，修改，删除一张已经存在表的列。另外你也可以用 ALTER TABLE 命令添加和删除约束</li>
+</ol>
+<pre><code class="bash">### 增加列
+ALTER TABLE table_name ADD column_name datatype;
+### 删除列
+ALTER TABLE table_name DROP COLUMN column_name;
+### 修改数据类型
+ALTER TABLE table_name ALTER COLUMN column_name TYPE datatype;
+### 添加UNIQUE约束
+ALTER TABLE table_name
+ADD CONSTRAINT MyUniqueConstraint UNIQUE(column1, column2...);
+### 添加check约束
+ALTER TABLE table_name
+ADD CONSTRAINT MyUniqueConstraint CHECK (CONDITION);
+### 添加主键
+ALTER TABLE table_name
+ADD CONSTRAINT MyPrimaryKey PRIMARY KEY (column1, column2...);
+### 删除约束 pgsql
+ALTER TABLE table_name
+DROP CONSTRAINT MyUniqueConstraint;
+### 删除约束 mysql
+ALTER TABLE table_name
+DROP INDEX MyUniqueConstraint;
+### 删除主键 pgsql
+ALTER TABLE table_name
+DROP CONSTRAINT MyPrimaryKey;
+### 删除主键 mysql
+ALTER TABLE table_name
+DROP PRIMARY KEY;
 </code></pre>
 <p><strong>注意⚠️：</strong>SQL语法不区分大小写<br>一些最重要的 SQL 命令<br>SELECT - 从数据库中提取数据<br>UPDATE - 更新数据库中的数据<br>DELETE - 从数据库中删除数据<br>INSERT INTO - 向数据库中插入新数据<br>CREATE DATABASE - 创建新数据库<br>ALTER DATABASE - 修改数据库<br>CREATE TABLE - 创建新表<br>ALTER TABLE - 变更（改变）数据库表<br>DROP TABLE - 删除表<br>CREATE INDEX - 创建索引（搜索键）<br>DROP INDEX - 删除索引 </p>
 

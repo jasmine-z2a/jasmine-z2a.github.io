@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>开发环境和代码格式化杂谈 | J de blog</title>
-  <meta name="keywords" content=" other ">
-  <meta name="description" content="开发环境和代码格式化杂谈 | J de blog">
+  <title>会一点docker | J de blog</title>
+  <meta name="keywords" content=" docker ">
+  <meta name="description" content="会一点docker | J de blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
 <meta property="og:type" content="website">
@@ -668,9 +668,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-dev-env" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-会一点docker" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">开发环境和代码格式化杂谈</h1>
+        <h1 class="article-title">会一点docker</h1>
     
     <div class="article-meta">
         
@@ -680,7 +680,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="其他">其他</a>
+            <a  data-rel="docker">docker</a>
             
         </span>
         
@@ -688,14 +688,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color1">other</a>
+            <a class="color2">docker</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-14 18:21:57'>2022-09-16 18:00</time>
+            发布时间 : <time class="date" title='最后更新: 2024-02-06 10:44:02'>2024-02-02 13:29</time>
         
     </div>
     <div class="article-meta">
@@ -717,7 +717,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#IDE%E9%85%8D%E7%BD%AE%EF%BC%88vs-code%E7%89%88%EF%BC%89"><span class="toc-text">IDE配置（vs code版）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8"><span class="toc-text">python虚拟环境使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#setup-py%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%8C%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%EF%BC%8C%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%EF%BC%9F"><span class="toc-text">setup.py有什么作用，什么时候用，如何编写？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8flask%E5%90%8E%E5%8F%B0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%88quick-start%EF%BC%89"><span class="toc-text">启动flask后台环境配置（quick start）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python-cli%E9%85%8D%E7%BD%AE%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE"><span class="toc-text">python cli配置，快速启动项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#js-package-config%E9%85%8D%E7%BD%AE"><span class="toc-text">js package config配置</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker"><span class="toc-text">Docker</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-components"><span class="toc-text">Docker components</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-components-file"><span class="toc-text">docker-components file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E5%8F%AF%E7%94%A8redis-%E6%9C%8D%E5%8A%A1"><span class="toc-text">docker 快速创建本地测试环境可用redis 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0sql%E6%9C%8D%E5%8A%A1"><span class="toc-text">docker 快速创建本地sql服务</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -733,35 +733,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="IDE配置（vs-code版）"><a href="#IDE配置（vs-code版）" class="headerlink" title="IDE配置（vs code版）"></a>IDE配置（vs code版）</h2><p>必装的插件(不区分语言)集合：gitlens，gitgraph, docker，remote ssh, </p>
-<p>python 插件：</p>
-<p>js 插件：turbo console log</p>
-<p>go 插件：</p>
-<h2 id="python虚拟环境使用"><a href="#python虚拟环境使用" class="headerlink" title="python虚拟环境使用"></a>python虚拟环境使用</h2><p>为了区分不和本地其他项目环境互相干扰</p>
-<ol>
-<li>创建运行虚拟环境目录</li>
-<li>进入虚拟环境执行：python3 -m venv .  （python3 自带的虚拟环境）</li>
-<li>虚拟环境启动  source venv_dir&#x2F;bin&#x2F;activate   </li>
-<li>安装项目相关的三方库，终端执行：pip3 install -r requirements.txt</li>
-<li>退出虚拟环境,终端执行：deactivate</li>
-</ol>
-<h2 id="setup-py有什么作用，什么时候用，如何编写？"><a href="#setup-py有什么作用，什么时候用，如何编写？" class="headerlink" title="setup.py有什么作用，什么时候用，如何编写？"></a>setup.py有什么作用，什么时候用，如何编写？</h2><p>为了项目分发打包，打包工具：distutils<br>setuptools<br>easy_install<br>setup.py 编写<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/276461821">https://zhuanlan.zhihu.com/p/276461821</a></p>
-<h2 id="启动flask后台环境配置（quick-start）"><a href="#启动flask后台环境配置（quick-start）" class="headerlink" title="启动flask后台环境配置（quick start）"></a>启动flask后台环境配置（quick start）</h2><p>.flaskenv<br>.env用法：</p>
-<p>.env</p>
-<pre><code class="shell">REDIS_ADDRESS=localhost:6379
-MEANING_OF_LIFE=42
-MY_SECRET=&quot;helloworld
+        <h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h2 id="Docker-components"><a href="#Docker-components" class="headerlink" title="Docker components"></a>Docker components</h2><h3 id="docker-components-file"><a href="#docker-components-file" class="headerlink" title="docker-components file"></a>docker-components file</h3><blockquote>
+<p>如何用docker-compose file 中的command执行多条命令<br><strong>要注意docker compose file 的格式和严格排版</strong></p>
+</blockquote>
+<pre><code class="bash">### 只执行单条命令的时候
+services:
+  web:
+    build: ./dir
+    working_dir: /usr/src/app
+    command: python3 manage.py run
+### 执行多条命令的时候
+services:
+  web:
+    build: ./dir
+    working_dir: /usr/src/app
+    command: 
+      - /bin/sh
+      - -c
+      - |
+         python3 manage.py create_db
+         python3 manage.py run
+         ### 后面可以继续接其他要执行的命令 
 </code></pre>
-<p>pip3 install python-dotenv<br>config.py</p>
-<pre><code class="python3">from dotenv import load_dotenv
-load_dotenv()
+<h3 id="docker-快速创建本地测试环境可用redis-服务"><a href="#docker-快速创建本地测试环境可用redis-服务" class="headerlink" title="docker 快速创建本地测试环境可用redis 服务"></a>docker 快速创建本地测试环境可用redis 服务</h3><p>当我们在开发初期，需要调用到类似reids这种中间件，最方便的不是在本地服务器安装redis，启动服务，而是用docker的redis镜像创建一个docker微服务，这样当我们在开发多个项目的时候，本地中间件的环境也是可以通过设置不同的端口号隔离互不影响的。以下是用法：</p>
+<pre><code class="bash"># 拉取官方镜像，如果开发对redis版本有要求，可以指定redis版本，默认latest 
+docekr pull redis
+
+# 需要在本地redis设置config(设置密码，以及端口访问限制)，以及挂载data目录
+
+
+# 利用redis镜像生成redis容器，
+
 </code></pre>
-<p>Now all your key&#x3D;value pairs will be loaded into your application.</p>
-<pre><code class="python3">import os
- os.getenv(&quot;MY_SECRET&quot;)
+<h3 id="docker-快速创建本地sql服务"><a href="#docker-快速创建本地sql服务" class="headerlink" title="docker 快速创建本地sql服务"></a>docker 快速创建本地sql服务</h3><pre><code class="bash">
 </code></pre>
-<h2 id="python-cli配置，快速启动项目"><a href="#python-cli配置，快速启动项目" class="headerlink" title="python cli配置，快速启动项目"></a>python cli配置，快速启动项目</h2><p>flask-cli </p>
-<h2 id="js-package-config配置"><a href="#js-package-config配置" class="headerlink" title="js package config配置"></a>js package config配置</h2>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>
     </div>
