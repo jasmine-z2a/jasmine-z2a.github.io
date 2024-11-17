@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>python装饰器 | J de blog</title>
-  <meta name="keywords" content=" python ">
-  <meta name="description" content="python装饰器 | J de blog">
+  <title>nginx基础知识 | J de blog</title>
+  <meta name="keywords" content=" nginx , full-stack knowledge ">
+  <meta name="description" content="nginx基础知识 | J de blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于我website fullstack developer有趣的灵魂，永远有求知欲和好奇心 关于我的blog随便写写记记，没有特定的目标读者，如果我的文章或者笔记能帮到你，我也会很开心的。 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻和钢琴🎹。旅游：国内大大小小的城市去了20多">
 <meta property="og:type" content="website">
@@ -750,9 +750,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-python装饰器" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-nginx基础知识" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">python装饰器</h1>
+        <h1 class="article-title">nginx基础知识</h1>
     
     <div class="article-meta">
         
@@ -762,7 +762,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="python">python</a>
+            <a  data-rel="nginx">nginx</a>
             
         </span>
         
@@ -770,14 +770,16 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">python</a>
+            <a class="color1">nginx</a>
+            
+            <a class="color1">full-stack knowledge</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-12-13 14:58:24'>2023-11-16 15:25</time>
+            发布时间 : <time class="date" title='最后更新: 2024-11-17 18:04:42'>2024-11-17 16:09</time>
         
     </div>
     <div class="article-meta">
@@ -799,7 +801,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85"><span class="toc-text">什么是闭包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AD%E5%8C%85%E5%92%8C%E8%A3%85%E9%A5%B0%E5%99%A8%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">闭包和装饰器的关系</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A3%85%E9%A5%B0%E5%99%A8"><span class="toc-text">什么是装饰器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A3%85%E9%A5%B0%E5%99%A8%E7%B1%BB"><span class="toc-text">装饰器类</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-text">基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE"><span class="toc-text">配置文件中的变量设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nginx%E8%AF%AD%E6%B3%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">nginx语法注意事项</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -815,128 +817,242 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h2><p>在了解装饰器之前，我们可以现了解一下什么是闭包(Closeure)<br>闭包（Closure）是指在一个函数内部定义的函数，且内部函数可以访问外部函数的局部变量。换句话说，闭包是一个函数对象，它引用了在其定义外部的非全局变量。</p>
-<h2 id="闭包和装饰器的关系"><a href="#闭包和装饰器的关系" class="headerlink" title="闭包和装饰器的关系"></a>闭包和装饰器的关系</h2><p>闭包作为装饰器的一种实现方式：<br>由于装饰器是一个函数，而闭包是定义在函数内部的函数，因此装饰器本身就是一种闭包。在装饰器的实现中，内部函数通常就是一个闭包，它可以引用外部函数的参数或局部变量。</p>
-<p>闭包用于实现装饰器的状态保持：<br>闭包常常用于在装饰器中保持一些状态信息。例如，一个计数器装饰器可以使用闭包来保持计数器的状态。通过在闭包中引用外部变量，装饰器可以在函数调用之间保持一些状态。s</p>
-<h1 id="什么是装饰器"><a href="#什么是装饰器" class="headerlink" title="什么是装饰器"></a>什么是装饰器</h1><p>装饰器(decorator)是python语法中的一项独特特性，装饰器允许您通过在函数或方法定义之前使用 @decorator 语法糖来修改函数或方法的行为。以下是一个普通的装饰器：  </p>
-<pre><code class="python">from functools import wraps
-def decorator_name(f):
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        if not can_run:
-            return &quot;Function will not run&quot;
-        return f(*args, **kwargs)
-    return decorated
-</code></pre>
-<p>其中wraps也是一个装饰器，用于解决装饰器可能引起的一些问题，特别是与函数文档字符串（__doc__）和函数名称（__name__）相关的问题。wraps 被用来确保被装饰的函数保留原始函数的信息。也就是用来保持函数的元信息<br>在一个装饰器中，如果不使用 functools.wraps，那么被装饰的函数的名称和文档字符串可能会变成装饰器内部函数的名称和文档字符串。这可能导致在使用被装饰函数时出现一些意外的行为。</p>
-<p>简言之，装饰器的运用的几个特点：</p>
+        <h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/nginx-setup-intro.html">https://www.runoob.com/w3cnote/nginx-setup-intro.html</a></p>
+<p>配置文件的基础组成块：  </p>
 <ol>
-<li>使用@decorator语法糖装饰其他函数</li>
+<li>全局块：配置影响nginx全局的指令。一般有运行nginx服务器的用户组，nginx进程pid存放路径，日志存放路径，配置文件引入，允许生成worker process数等。</li>
+<li>events块：配置影响nginx服务器或与用户的网络连接。有每个进程的最大连接数，选取哪种事件驱动模型处理连接请求，是否允许同时接受多个网路连接，开启多个网络连接序列化等。</li>
+<li>http块：可以嵌套多个server，配置代理，缓存，日志定义等绝大多数功能和第三方模块的配置。如文件引入，mime-type定义，日志自定义，是否使用sendfile传输文件，连接超时时间，单连接请求数等。</li>
+<li>server块：配置虚拟主机的相关参数，一个http中可以有多个server。</li>
+<li>location块：配置请求的路由，以及各种页面的处理情况。</li>
 </ol>
-<pre><code class="python"># 正确用法 装饰用def定义的函数体本身
-@decorator
-def function():
-    &quot;&quot;&quot;这是被装饰的函数&quot;&quot;&quot;
-    print(&quot;function&quot;)
-    return 
+<pre><code class="bash">...              #全局块
 
-# 错误用法 装饰调用的函数，这么写会报语法错误
-@decorator
-function()
+events &#123;         #events块
+   ...
+&#125;
+
+http      #http块
+&#123;
+    ...   #http全局块
+    server        #server块
+    &#123; 
+        ...       #server全局块
+        location [PATTERN]   #location块
+        &#123;
+            ...
+        &#125;
+        location [PATTERN] 
+        &#123;
+            ...
+        &#125;
+    &#125;
+    server
+    &#123;
+      ...
+    &#125;
+    ...     #http全局块
+&#125;
 </code></pre>
-<ol start="2">
-<li>会将def定义的函数作为参数传给装饰器,然后在装饰器内部，我们可以对该函数的输入和输出进行操作，以及做一些拦截函数执行的操作，比如很多后台服务接口要验证是否是登录，登录才能使用该接口等，如下：</li>
-</ol>
-<pre><code class="python">def decorator(func):
-    def wrapper(*args,**kwargs):
-        # 获取func name
-        print(f&quot;funtion name:&#123;func.__name__&#125;&quot;)
+<p>以下是默认的nginx config，不过根据系统不同， pid的路径会不同， 注意：如果pid路径不存在，nginx会报错</p>
+<pre><code class="bash">#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events &#123;
+    worker_connections  1024;
+&#125;
+
+
+http &#123;
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #log_format  main  &#39;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#39;
+    #                  &#39;$status $body_bytes_sent &quot;$http_referer&quot; &#39;
+    #                  &#39;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#39;;
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    server &#123;
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / &#123;
+            root   html;
+            index  index.html index.htm;
+        &#125;
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html &#123;
+            root   html;
+        &#125;
+
+        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        #
+        #location ~ \.php$ &#123;
+        #    proxy_pass   http://127.0.0.1;
+        #&#125;
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        #location ~ \.php$ &#123;
+        #    root           html;
+        #    fastcgi_pass   127.0.0.1:9000;
+        #    fastcgi_index  index.php;
+        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+        #    include        fastcgi_params;
+        #&#125;
+
+        # deny access to .htaccess files, if Apache&#39;s document root
+        # concurs with nginx&#39;s one
+        #
+        #location ~ /\.ht &#123;
+        #    deny  all;
+        #&#125;
+    &#125;
+
+
+    # another virtual host using mix of IP-, name-, and port-based configuration
+    #
+    #server &#123;
+    #    listen       8000;
+    #    listen       somename:8080;
+    #    server_name  somename  alias  another.alias;
+
+    #    location / &#123;
+    #        root   html;
+    #        index  index.html index.htm;
+    #    &#125;
+    #&#125;
+
+
+    # HTTPS server
+    #
+    #server &#123;
+    #    listen       443 ssl;
+    #    server_name  localhost;
+
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_cache    shared:SSL:1m;
+    #    ssl_session_timeout  5m;
+
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers  on;
+
+    #    location / &#123;
+    #        root   html;
+    #        index  index.html index.htm;
+    #    &#125;
+    #&#125;
+
+&#125;
+</code></pre>
+<h3 id="配置文件中的变量设置"><a href="#配置文件中的变量设置" class="headerlink" title="配置文件中的变量设置"></a>配置文件中的变量设置</h3><p>最近在工作中遇到一个需求，其实在某种程度上说这个是需求优化，背景是在nginx配置url时，当url数量变多时，需要重复书写server name和port，有个研发同事的说需要在后台修改所有server name，多个server name和port出现时，我们可能需要一个一个遍历查找后替换，实际上nginx config支持变量替换的语法，用法如下：<br>For Example</p>
+<pre><code class="bash">    server &#123;
+        server_name: localhost
+        set $backend_port: 8800
+
+        location / &#123;
+           root   html;
+           index  index.html index.htm;
+        &#125;
+        # 普通的不带查询字符串的get请求，直接用变量替换即可
+        location /api/get &#123;
+            proxy_pass http://$server_name:$backend_port/get_data;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        &#125;
+        # 带查询字符串的get请求，需要加$is_args$arg， is_args表示的是url中的？，$args表示的是param=&#123;&#125;，不论后面接了多少个查询字符串，$args只要写一次就行。如果不写会存在查询字符串丢失的情况，从而nginx在转发的时候会出现502。
+        location /api/get_with_params &#123;
+            proxy_pass http://$server_name:$backend_port/get_data_with_params$is_args$args;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        &#125;
+
+
+        # 普通的post请求
+        location /api/post &#123;
+            proxy_pass http://$server_name:$backend_port/post_data;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        &#125;
+
         
-        # 获取被装饰的函数的参数
-        print(args, kwargs)
+    &#125;
 
-        # 不对函数结果处理的话，可以直接返回函数本身
-        return func(*args, **kwargs)
-
-        # 对函数的结果做处理：
-        res = func(*args,**kwargs)
-        if res:
-            pass
-            return 
-        else:
-            pass
-            return
-
-    return wrapper
 
 </code></pre>
-<ol start="3">
-<li>给装饰器传参,如果只是死记它的用法，那很简单，无非是比不传参数的多包裹一层函数，要理解为什么这么写：</li>
-</ol>
-<pre><code class="python"># 这是一个带参数的的装饰器的基本用法
-from function import wraps
-import logging
+<h3 id="nginx语法注意事项"><a href="#nginx语法注意事项" class="headerlink" title="nginx语法注意事项"></a>nginx语法注意事项</h3><pre><code class="bash">########### 每个指令必须有分号结束。#################
+#user administrator administrators;  #配置用户或者组，默认为nobody nobody。
+#worker_processes 2;  #允许生成的进程数，默认为1
+#pid /nginx/pid/nginx.pid;   #指定nginx进程运行文件存放地址
+error_log log/error.log debug;  #制定日志路径，级别。这个设置可以放入全局块，http块，server块，级别以此为：debug|info|notice|warn|error|crit|alert|emerg
+events &#123;
+    accept_mutex on;   #设置网路连接序列化，防止惊群现象发生，默认为on
+    multi_accept on;  #设置一个进程是否同时接受多个网络连接，默认为off
+    #use epoll;      #事件驱动模型，select|poll|kqueue|epoll|resig|/dev/poll|eventport
+    worker_connections  1024;    #最大连接数，默认为512
+&#125;
+http &#123;
+    include       mime.types;   #文件扩展名与文件类型映射表
+    default_type  application/octet-stream; #默认文件类型，默认为text/plain
+    #access_log off; #取消服务日志    
+    log_format myFormat &#39;$remote_addr–$remote_user [$time_local] $request $status $body_bytes_sent $http_referer $http_user_agent $http_x_forwarded_for&#39;; #自定义格式
+    access_log log/access.log myFormat;  #combined为日志格式的默认值
+    sendfile on;   #允许sendfile方式传输文件，默认为off，可以在http块，server块，location块。
+    sendfile_max_chunk 100k;  #每个进程每次调用传输数量不能大于设定的值，默认为0，即不设上限。
+    keepalive_timeout 65;  #连接超时时间，默认为75s，可以在http，server，location块。
 
-@logged(level, name=None, message=None)
-def test_add(a:int,b:int):
-    print(&quot;a + b = &#123;&#125;&quot;.format(a+b))
-
-# 用括弧执行起来是这样的，如下：
-logged(level)(test_add)()
-也就是相当于在decorator外多了一层用来接受参数,写法如下：
-def logged(level, name=None, message=None):
-    &quot;&quot;&quot;
-    Add logging to a function. level is the logging
-    level, name is the logger name, and message is the
-    log message. If name and message aren&#39;t specified,
-    they default to the function&#39;s module and name.
-    &quot;&quot;&quot;
-    def decorate(func):
-        logname = name if name else func.__module__
-        log = logging.getLogger(logname)
-        logmsg = message if message else func.__name__
-
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            log.log(level, logmsg)
-            return func(*args, **kwargs)
-        return wrapper
-    return decorate
+    upstream mysvr &#123;   
+      server 127.0.0.1:7878;
+      server 192.168.10.121:3333 backup;  #热备
+    &#125;
+    error_page 404 https://www.baidu.com; #错误页
+    server &#123;
+        keepalive_requests 120; #单连接请求上限次数。
+        listen       4545;   #监听端口
+        server_name  127.0.0.1;   #监听地址       
+        location  ~*^.+$ &#123;       #请求的url过滤，正则匹配，~为区分大小写，~*为不区分大小写。
+           #root path;  #根目录
+           #index vv.txt;  #设置默认页
+           proxy_pass  http://mysvr;  #请求转向mysvr 定义的服务器列表
+           deny 127.0.0.1;  #拒绝的ip
+           allow 172.18.5.54; #允许的ip           
+        &#125; 
+    &#125;
+&#125;
 </code></pre>
-<h2 id="装饰器类"><a href="#装饰器类" class="headerlink" title="装饰器类"></a>装饰器类</h2><p>不带参数的类装饰器<br><strong>init</strong> ：接收被装饰函数<br><strong>call</strong> ：实现装饰逻辑</p>
-<pre><code class="python"># Use of the __call__ method in Python
-class DecoratorClass:
-    def __init__(self, func):
-        self.func = func
-
-    def __call__(self,*args,**kwargs):
-        print(&#39;the function &#123;&#125;() is running...&#39;).format(self.func.__name__)
-        # Code before the function call
-        self.func(*args,**kwargs)
-        # Code after the function call
-        return 
-</code></pre>
-<p>带参数的类装饰器<br>注意这块的参数是在__init__这里初始化的，</p>
-<pre><code class="python">class DecoratorClass:
-    def __init__(self,params):
-        self.params = params
-
-    def __call__(self,func):
-        def wrapper(*args,**kwargs):
-            print(&#39;&#123;level&#125;: the function &#123;func&#125; () is running...&#39;).format(level=self.level, func=func.__name__)
-            func(*args,**kwargs)
-        return wrapper
-
-
-# 使用
-@DecoratorClass(params=&quot;params&quot;)
-def func(a,b):
-    print(&quot;a + b =&quot;, a+b)
-    return a+b
-
-# 调用
-func()
-</code></pre>
+<p>补充：<br>server_name不可以用0.0.0.0, 0.0.0.0表示是所有的网址可以访问，这在反向代理中是不安全的。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>

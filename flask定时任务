@@ -6,15 +6,15 @@
   <meta name="keywords" content=" python , flask ">
   <meta name="description" content="flask定时任务 | J de blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
+<meta name="description" content="关于我website fullstack developer有趣的灵魂，永远有求知欲和好奇心 关于我的blog随便写写记记，没有特定的目标读者，如果我的文章或者笔记能帮到你，我也会很开心的。 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻和钢琴🎹。旅游：国内大大小小的城市去了20多">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://jasmine-z2a.github.io/about/index.html">
 <meta property="og:site_name" content="J de blog">
-<meta property="og:description" content="关于我一个普普通通的会上网的普通人 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻。旅游：国内大大小小的城市去了20多个，尝试出国旅游中。动漫：喜欢一些热血或侦探类的日漫。宠物：猫猫🐱狗狗🐶都挺喜欢的，曾长期投喂小区流浪猫猫，并帮忙找到了领养。阅读：随便看看，开卷有益📖">
+<meta property="og:description" content="关于我website fullstack developer有趣的灵魂，永远有求知欲和好奇心 关于我的blog随便写写记记，没有特定的目标读者，如果我的文章或者笔记能帮到你，我也会很开心的。 个人求职简历请点击链接：https:&#x2F;&#x2F;jasmine-z2a.github.io&#x2F;resume-cn 兴趣爱好音乐：喜欢听音乐🎵，曲风不限，会一点点小提琴🎻和钢琴🎹。旅游：国内大大小小的城市去了20多">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-04T10:45:19.000Z">
-<meta property="article:modified_time" content="2023-10-05T15:40:46.806Z">
+<meta property="article:modified_time" content="2024-11-17T08:21:36.564Z">
 <meta property="article:author" content="Jasmine Tang">
 <meta name="twitter:card" content="summary">
 
@@ -113,7 +113,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(20)</small>
+                <small>(24)</small>
             
         </div>
     </li>
@@ -125,7 +125,7 @@
         <div data-rel="工具">
             <i class="fold iconfont icon-right"></i>
             工具
-            <small>(1)</small>
+            <small>(3)</small>
         </div>
         
             <ul class="sub hide">
@@ -263,6 +263,10 @@
     
         
             
+        
+    
+        
+            
                 
     <li>
         <div data-rel="CS基础">
@@ -308,6 +312,21 @@
     
         
             
+                
+    <li>
+        <div data-rel="nginx">
+            
+            nginx
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
         
     
         
@@ -317,7 +336,7 @@
         <div data-rel="python">
             <i class="fold iconfont icon-right"></i>
             python
-            <small>(5)</small>
+            <small>(6)</small>
         </div>
         
             <ul class="sub hide">
@@ -327,6 +346,17 @@
         <div data-rel="python&lt;---&gt;测试">
             
             测试
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="python&lt;---&gt;celery">
+            
+            celery
             <small>(1)</small>
         </div>
         
@@ -361,7 +391,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="20">
+<input type="hidden" id="yelog_site_posts_number" value="24">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -424,11 +454,23 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>celery</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>docker</a>
             </li>
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>flask</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>full-stack knowledge</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nginx</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -460,6 +502,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>Tools</a>
             </li>
         
@@ -469,6 +515,42 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 nginx "
+           href="/nginx%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"
+           data-tag="nginx,full-stack knowledge"
+           data-author="" >
+            <span class="post-title" title="nginx基础知识">nginx基础知识</span>
+            <span class="post-date" title="2024-11-17 16:09:25">2024/11/17</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%92%8Cnginx"
+           data-tag="tool"
+           data-author="" >
+            <span class="post-title" title="前后端和nginx应用">前后端和nginx应用</span>
+            <span class="post-date" title="2024-03-01 20:15:59">2024/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 "
+           href="/Makefile%E5%AE%9E%E8%B7%B5"
+           data-tag="tool"
+           data-author="" >
+            <span class="post-title" title="Makefile实践">Makefile实践</span>
+            <span class="post-date" title="2024-03-01 10:05:24">2024/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 python celery "
+           href="/flask-celery%E5%BA%94%E7%94%A8"
+           data-tag="python,flask,celery"
+           data-author="" >
+            <span class="post-title" title="flask+celery应用">flask+celery应用</span>
+            <span class="post-date" title="2024-02-28 10:50:04">2024/02/28</span>
+        </a>
         
         
         <a  class="全部文章 docker "
