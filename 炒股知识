@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>pytest中的配置文件 | J de blog</title>
-  <meta name="keywords" content=" python , test ">
-  <meta name="description" content="pytest中的配置文件 | J de blog">
+  <title>股市知识 | J de blog</title>
+  <meta name="keywords" content=" knowledge ">
+  <meta name="description" content="股市知识 | J de blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一些学习炒股的技巧摘要：  看盘技巧:   开盘9:00～9:15（1）开盘后必需立即查看委托买进笔数与委托卖出笔数的多寡,开盘委买单大于委卖单达2倍以上（如买单10万张，卖单5万），则显示买气十分旺盛，作出胜算较大，短线进出者可立即买进，待股价拉高后立即于高价抛出获利，反之若卖单大于买单2倍以上，则代表空方卖盘十分强大，当日作空比较有利，开盘立即卖出手中持股，逢低再回补    2.选股   3.">
 <meta property="og:type" content="article">
@@ -788,9 +788,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-pytest中的配置文件" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-炒股知识" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">pytest中的配置文件</h1>
+        <h1 class="article-title">股市知识</h1>
     
     <div class="article-meta">
         
@@ -800,9 +800,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="测试">测试</a> > 
-            
-            <a  data-rel="测试&lt;---&gt;pytest">pytest</a>
+            <a  data-rel="others">others</a>
             
         </span>
         
@@ -810,16 +808,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">python</a>
-            
-            <a class="color5">test</a>
+            <a class="color5">knowledge</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-23 19:02:48'>2023-08-23 11:37</time>
+            发布时间 : <time class="date" title='最后更新: 2024-11-24 15:56:17'>2024-11-24 15:18</time>
         
     </div>
     <div class="article-meta">
@@ -841,7 +837,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pytest-ini-%E7%94%A8%E6%B3%95"><span class="toc-text">pytest.ini 用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pyproject-toml%EF%BC%9A"><span class="toc-text">pyproject.toml：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tox-ini"><span class="toc-text">tox.ini:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#setup-cfg"><span class="toc-text">setup.cfg:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%EF%BC%9A"><span class="toc-text">引用：</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -857,62 +853,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>配置文件是使配置本地保存的一个常用方式，在pytest测试中避免每次传入大量的参数的不方便，以及参数过多导致漏传的问题。<br>pytest中的常规配置文件比如pytest.ini，我在项目中一般也就用这个就够了，但是出于对其他几个配置文件的好奇，于是有了这篇文章，来看看其他配置文件，比如：pyproject.toml，tox.ini，setup.cfg，官网上有写到这些配置文件各自的用途，在这里我总结一下  </p>
-<h2 id="pytest-ini-用法"><a href="#pytest-ini-用法" class="headerlink" title="pytest.ini 用法"></a>pytest.ini 用法</h2><p>在所有配置文件中的优先级是最高的</p>
-<pre><code>[pytest]
-minversion = 6.0
-addopts = -ra -q
-testpaths =
-    tests
-    integration
-</code></pre>
-<h2 id="pyproject-toml："><a href="#pyproject-toml：" class="headerlink" title="pyproject.toml："></a>pyproject.toml：</h2><p>官网原话引用：人们可能想知道为什么像其他工具一样使用 [tool.pytest.ini_options] 而不是 [tool.pytest]。</p>
-<p>原因是pytest团队打算在未来充分利用丰富的TOML数据格式进行配置，为此保留了[tool.pytest]表。 目前，ini_options 表用作现有 .ini 配置系统和未来配置格式之间的桥梁。  </p>
-<pre><code>[tool.pytest.ini_options]
-minversion = &quot;6.0&quot;
-addopts = &quot;-ra -q&quot;
-testpaths = [
-    &quot;tests&quot;,
-    &quot;integration&quot;,
-]
-</code></pre>
-<h2 id="tox-ini"><a href="#tox-ini" class="headerlink" title="tox.ini:"></a>tox.ini:</h2><p>tox是什么，从tox官网可知，它是一个自动化项目，目的是使python的测试自动化且标准化，使用指南传送🚪：[tox使用指南]（<a target="_blank" rel="noopener" href="https://tox.wiki/en/4.10.0/user_guide.html%EF%BC%89">https://tox.wiki/en/4.10.0/user_guide.html）</a>, 如果使用tox.ini文件配置参数，在[pytest]后的那一块和pytest.ini的用法一致，可以说是tox.ini是包含pytest的功能</p>
-<pre><code>[tox]
-env_list =
-    format
-    py310
-
-[testenv:format]
-description = install black in a virtual environment and invoke it on the current folder
-deps = black==22.3.0
-skip_install = true
-commands = black .
-
-[testenv:py310]
-description = install pytest in a virtual environment and invoke it on the tests folder
-deps =
-    pytest&gt;=7
-    pytest-sugar
-commands = pytest tests &#123;posargs&#125;
-[pytest]
-minversion = 6.0
-addopts = -ra -q
-testpaths =
-    tests
-    integration
-</code></pre>
-<h2 id="setup-cfg"><a href="#setup-cfg" class="headerlink" title="setup.cfg:"></a>setup.cfg:</h2><p>官网不建议使用这种格式的配置文件，原因如下：  </p>
-<blockquote>
-<p>警告!!!<br>用法 setup.cfg 除非用于非常简单的用例，否则不推荐使用。 .cfg 文件使用不同于 pytest.ini 和 tox.ini 这可能会导致难以追踪的问题。如果可能，建议使用后一个文件，或者 pyproject.toml ，以保存pytest配置。</p>
+        <p>一些学习炒股的技巧摘要：</p>
+<ol>
+<li>看盘技巧:  <blockquote>
+<p>开盘9:00～9:15<br>（1）开盘后必需立即查看委托买进笔数与委托卖出笔数的多寡,开盘委买单大于委卖单达2倍以上（如买单10万张，卖单5万），则显示买气十分旺盛，作出胜算较大，短线进出者可立即买进，待股价拉高后立即于高价抛出获利，<br>反之若卖单大于买单2倍以上，则代表空方卖盘十分强大，当日作空比较有利，开盘立即卖出手中持股，逢低再回补</p>
 </blockquote>
-<pre><code>[tool:pytest]
-minversion = 6.0
-addopts = -ra -q
-testpaths =
-    tests
-    integration
-</code></pre>
-<h2 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h2><p><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/7.1.x/reference/customize.html">https://docs.pytest.org/en/7.1.x/reference/customize.html</a><br><a target="_blank" rel="noopener" href="https://tox.wiki/en/4.10.0/">https://tox.wiki/en/4.10.0/</a>  </p>
+</li>
+</ol>
+<p>2.选股  </p>
+<p>3.买入条件<br>4.卖出条件  </p>
+<blockquote>
+<p>摘要选自以下博文地址：<br><a target="_blank" rel="noopener" href="https://m.gelonghui.com/p/517970">https://m.gelonghui.com/p/517970</a><br><a target="_blank" rel="noopener" href="https://www.moomoo.com/hans/community/feed/108593813979141">https://www.moomoo.com/hans/community/feed/108593813979141</a></p>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 jasmine7625@163.com </span>
